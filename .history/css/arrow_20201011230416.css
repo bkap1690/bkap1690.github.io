@@ -17,6 +17,7 @@ section {
   display: inline-block;
   margin: 1%;
   box-sizing: border-box;
+  float: left;
 }
 
 section:nth-child(odd) {

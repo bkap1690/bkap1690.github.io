@@ -364,43 +364,47 @@ header {
 }
 
 
-#section04 a {
+#section05 a {
   width: 24px;
   height: 24px;
   border-left: 2px solid rgb(85, 85, 85);
   border-bottom: 2px solid rgb(85, 85, 85);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-animation: sdb04 2s infinite;
-  animation: sdb04 2s infinite;
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
 
-@-webkit-keyframes sdb04 {
+@-webkit-keyframes sdb05 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
 
   50% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
 }
 
-@keyframes sdb04 {
+@keyframes sdb05 {
   0% {
     transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
 
   50% {
-    transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 1;
   }
 
   100% {
-    transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
 }
 
@@ -608,7 +612,7 @@ a.nav-link.nested-link:focus {
 }
 
 .top-content {
-  padding-top: 12em;
+  padding-top: 5em;
   min-height: 500px;
   height: 100vh;
 }
@@ -770,7 +774,7 @@ a.nav-link.nested-link:focus {
   list-style: none;
 }
 
-.floating-image:nth-child(1) {
+.floating-image:nth-child(6) {
   width: 98px;
   height: 73.5px;
   left: auto;
@@ -784,7 +788,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(1) {
+  .floating-image:nth-child(6) {
     width: 103px;
     height: 77.25px;
     left: auto;
@@ -794,7 +798,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(1) {
+  .floating-image:nth-child(6) {
     width: 150px;
     height: 112.5px;
     top: 37px;
@@ -803,7 +807,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(2) {
+.floating-image:nth-child(7) {
   width: 124px;
   height: 93px;
   left: 10px;
@@ -817,7 +821,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(2) {
+  .floating-image:nth-child(7) {
     width: 129px;
     height: 96.75px;
     left: 30px;
@@ -827,7 +831,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(2) {
+  .floating-image:nth-child(7) {
     width: 190px;
     height: 142.5px;
     left: 45px;
@@ -836,7 +840,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(3) {
+.floating-image:nth-child(8) {
   width: 130px;
   height: 97.5px;
   left: 60px;
@@ -850,7 +854,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(3) {
+  .floating-image:nth-child(8) {
     width: 135px;
     height: 101.25px;
     left: 60px;
@@ -859,7 +863,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(3) {
+  .floating-image:nth-child(8) {
     width: 200px;
     height: 150px;
     top: 388px;
@@ -868,7 +872,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(4) {
+.floating-image:nth-child(9) {
   width: 118px;
   height: 88.5px;
   left: 90px;
@@ -882,7 +886,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(4) {
+  .floating-image:nth-child(9) {
     width: 123px;
     height: 92.25px;
     left: 90px;
@@ -891,7 +895,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(4) {
+  .floating-image:nth-child(9) {
     width: 180px;
     height: 135px;
     top: 123px;
@@ -900,7 +904,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(5) {
+.floating-image:nth-child(10) {
   width: 156px;
   height: 117px;
   left: auto;
@@ -914,7 +918,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(5) {
+  .floating-image:nth-child(10) {
     width: 161px;
     height: 120.75px;
     left: auto;
@@ -924,7 +928,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(5) {
+  .floating-image:nth-child(10) {
     width: 240px;
     height: 180px;
     top: 232px;
@@ -933,7 +937,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(6) {
+.floating-image:nth-child(11) {
   width: 130px;
   height: 97.5px;
   left: 0;
@@ -947,7 +951,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(6) {
+  .floating-image:nth-child(11) {
     width: 135px;
     height: 101.25px;
     left: 0;
@@ -956,7 +960,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(6) {
+  .floating-image:nth-child(11) {
     width: 200px;
     height: 150px;
     top: 18px;

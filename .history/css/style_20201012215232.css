@@ -364,7 +364,7 @@ header {
 }
 
 
-#section04 a {
+#section05 a {
   width: 24px;
   height: 24px;
   border-left: 2px solid rgb(85, 85, 85);
@@ -381,11 +381,11 @@ header {
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 
-  50% {
+  20% {
     -webkit-transform: rotate(-45deg) translate(-10px, 10px);
   }
 
-  100% {
+  40% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 }
@@ -395,11 +395,11 @@ header {
     transform: rotate(-45deg) translate(0, 0);
   }
 
-  50% {
+  20% {
     transform: rotate(-45deg) translate(-10px, 10px);
   }
 
-  100% {
+  40% {
     transform: rotate(-45deg) translate(0, 0);
   }
 }

@@ -364,43 +364,47 @@ header {
 }
 
 
-#section04 a {
+#section05 a {
   width: 24px;
   height: 24px;
   border-left: 2px solid rgb(85, 85, 85);
   border-bottom: 2px solid rgb(85, 85, 85);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-animation: sdb04 2s infinite;
-  animation: sdb04 2s infinite;
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
 
-@-webkit-keyframes sdb04 {
+@-webkit-keyframes sdb05 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
 
   50% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
 }
 
-@keyframes sdb04 {
+@keyframes sdb05 {
   0% {
     transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
 
   50% {
-    transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 1;
   }
 
   100% {
-    transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
 }
 
@@ -608,7 +612,7 @@ a.nav-link.nested-link:focus {
 }
 
 .top-content {
-  padding-top: 12em;
+  padding-top: 5em;
   min-height: 500px;
   height: 100vh;
 }
@@ -718,24 +722,24 @@ a.nav-link.nested-link:focus {
 }
 
 .floating-images__container {
-  height: 360px
+  height: 300px
 }
 
 @media screen and (min-width: 768px) {
   .floating-images__container {
-    height: 570px
+    height: 400px
   }
 }
 
 @media screen and (min-width: 375px) {
   .floating-images {
-    width: 360px
+    width: 300px
   }
 }
 
 @media screen and (min-width: 768px) {
   .floating-images {
-    width: 550px
+    width: 450px
   }
 }
 
@@ -766,11 +770,175 @@ a.nav-link.nested-link:focus {
   margin: 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
   border-radius: 4px;
-  will-change: transform;
-  list-style: none;
+  will-change: transform
 }
 
 .floating-image:nth-child(1) {
+  width: 45px;
+  height: 33.75px;
+  left: auto;
+  right: 40px;
+  top: 0;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-filter: blur(2px);
+  filter: blur(2px)
+}
+
+@media screen and (min-width: 375px) {
+  .floating-image:nth-child(1) {
+    width: 50px;
+    height: 37.5px;
+    left: auto;
+    right: 47px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floating-image:nth-child(1) {
+    width: 70px;
+    height: 52.5px;
+    top: 0;
+    right: 70;
+    left: auto
+  }
+}
+
+.floating-image:nth-child(2) {
+  width: 65px;
+  height: 48.75px;
+  left: auto;
+  right: 120px;
+  top: 5px;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px)
+}
+
+@media screen and (min-width: 375px) {
+  .floating-image:nth-child(2) {
+    width: 70px;
+    height: 52.5px;
+    left: auto;
+    right: 134px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floating-image:nth-child(2) {
+    width: 100px;
+    height: 75px;
+    top: 7px;
+    right: 205px;
+    left: auto
+  }
+}
+
+.floating-image:nth-child(3) {
+  width: 78px;
+  height: 58.5px;
+  left: auto;
+  right: 20px;
+  top: 70px;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px)
+}
+
+@media screen and (min-width: 375px) {
+  .floating-image:nth-child(3) {
+    width: 83px;
+    height: 62.25px;
+    left: auto;
+    right: 30px;
+    top: 60px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floating-image:nth-child(3) {
+    width: 120px;
+    height: 90px;
+    top: 93px;
+    right: 40px;
+    left: auto
+  }
+}
+
+.floating-image:nth-child(4) {
+  width: 98px;
+  height: 73.5px;
+  left: auto;
+  right: 0;
+  top: 264px;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -4.5s;
+  animation-delay: -4.5s
+}
+
+@media screen and (min-width: 375px) {
+  .floating-image:nth-child(4) {
+    width: 103px;
+    height: 77.25px;
+    right: 10px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floating-image:nth-child(4) {
+    width: 150px;
+    height: 112.5px;
+    left: auto;
+    right: 0;
+    top: 376px
+  }
+}
+
+.floating-image:nth-child(5) {
+  width: 60px;
+  height: 45px;
+  left: 30px;
+  right: auto;
+  top: 347px;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px)
+}
+
+@media screen and (min-width: 375px) {
+  .floating-image:nth-child(5) {
+    width: 65px;
+    height: 48.75px;
+    top: 347px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floating-image:nth-child(5) {
+    width: 90px;
+    height: 67.5px;
+    top: 504px;
+    left: 75px;
+    right: auto
+  }
+}
+
+.floating-image:nth-child(6) {
   width: 98px;
   height: 73.5px;
   left: auto;
@@ -784,7 +952,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(1) {
+  .floating-image:nth-child(6) {
     width: 103px;
     height: 77.25px;
     left: auto;
@@ -794,7 +962,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(1) {
+  .floating-image:nth-child(6) {
     width: 150px;
     height: 112.5px;
     top: 37px;
@@ -803,7 +971,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(2) {
+.floating-image:nth-child(7) {
   width: 124px;
   height: 93px;
   left: 10px;
@@ -817,7 +985,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(2) {
+  .floating-image:nth-child(7) {
     width: 129px;
     height: 96.75px;
     left: 30px;
@@ -827,7 +995,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(2) {
+  .floating-image:nth-child(7) {
     width: 190px;
     height: 142.5px;
     left: 45px;
@@ -836,7 +1004,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(3) {
+.floating-image:nth-child(8) {
   width: 130px;
   height: 97.5px;
   left: 60px;
@@ -850,7 +1018,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(3) {
+  .floating-image:nth-child(8) {
     width: 135px;
     height: 101.25px;
     left: 60px;
@@ -859,7 +1027,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(3) {
+  .floating-image:nth-child(8) {
     width: 200px;
     height: 150px;
     top: 388px;
@@ -868,7 +1036,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(4) {
+.floating-image:nth-child(9) {
   width: 118px;
   height: 88.5px;
   left: 90px;
@@ -882,7 +1050,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(4) {
+  .floating-image:nth-child(9) {
     width: 123px;
     height: 92.25px;
     left: 90px;
@@ -891,7 +1059,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(4) {
+  .floating-image:nth-child(9) {
     width: 180px;
     height: 135px;
     top: 123px;
@@ -900,7 +1068,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(5) {
+.floating-image:nth-child(10) {
   width: 156px;
   height: 117px;
   left: auto;
@@ -914,7 +1082,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(5) {
+  .floating-image:nth-child(10) {
     width: 161px;
     height: 120.75px;
     left: auto;
@@ -924,7 +1092,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(5) {
+  .floating-image:nth-child(10) {
     width: 240px;
     height: 180px;
     top: 232px;
@@ -933,7 +1101,7 @@ a.nav-link.nested-link:focus {
   }
 }
 
-.floating-image:nth-child(6) {
+.floating-image:nth-child(11) {
   width: 130px;
   height: 97.5px;
   left: 0;
@@ -947,7 +1115,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 375px) {
-  .floating-image:nth-child(6) {
+  .floating-image:nth-child(11) {
     width: 135px;
     height: 101.25px;
     left: 0;
@@ -956,7 +1124,7 @@ a.nav-link.nested-link:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .floating-image:nth-child(6) {
+  .floating-image:nth-child(11) {
     width: 200px;
     height: 150px;
     top: 18px;
