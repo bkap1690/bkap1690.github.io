@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1jLrfISsLUcRiwgNl0koSfsS6lylj0E7h">
+  <link rel="stylesheet" href="css/hover-min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>SportsStream Case Study</title>
+</head>
+
+<body data-spy="scroll" data-target="#side">
+  <script>
+    document.body.className = "js";
+  </script>
+  <header>
+    <nav class="navbar navbar-project navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand nav-logo pl-lg-5" href="index.html">Brett<span id="logo-dot">.</span>Kaplan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav pr-lg-5 navbar-pt">
+          <li class="nav-item active">
+            <a class="main-nav-link hvr-underline-from-center mx-3 px-0" href="index.html">Portfolio <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a class="main-nav-link hvr-underline-from-center mx-3 px-0" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="main-nav-link hvr-underline-from-center mx-3 px-0" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <progress value="0" max="1">
+      <!-- Older browsers look to the old div style of progress bars -->
+      <!-- Newer browsers ignore this stuff but it allows older browsers to 
+              still have a progress bar. -->
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  </header>
+  <div class="jumbotron-fluid pb-5 pt-3">
+    <h1 class="project-title project-title-sportsstream text-center pt-4">
+      SportsStream
+    </h1>
+    <hr class="small-hr" />
+    <p class="project-subtitle text-center pt-3 pb-5">
+      A Streaming platform for all-things-sports
+    </p>
+    <div class="d-flex justify-content-center">
+      <img class="w-50" src="assets/sportsstream_app_case_study_hero.png" alt="SportsStream Hero Image">
+    </div>
+  </div>
+  <div class="position-relative" id="content">
+    <div class="row h-100 mt-5">
+      <nav class="hidden pl-4 side-nav" id="secondary-nav">
+        <div class="mt-5 mb-3 sticky-top sticky-offset" id="side">
+          <ul class="nav flex-md-column" id="sidenav">
+            <li class="nav-item">
+              <a href="#overview" class="nav-link active pl-0 side-nav-header">Overview</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#problem">Problem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#solution">Solution</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#methods">Our Approach</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#my-role">My Contribution</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#research" class="nav-link pl-0 side-nav-header">Research</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#survey">Survey</a>
+                </li>
+                <li>
+                  <a class="nav-link nested-link" href="#interviews">Interviews</a>
+                </li>
+                <li>
+                  <a href="#empathy-diagrams" class="nav-link nested-link">Empathy Diagrams</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#personas">Personas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#design" class="nav-link pl-0 side-nav-header">Design</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#user-flows" class="nav-link nested-link">User Flows</a>
+                </li>
+                <li>
+                  <a href="#sketches" class="nav-link nested-link">Sketches</a>
+                </li>
+                <li>
+                  <a href="#wireframe" class="nav-link nested-link">Wireframe</a>
+                </li>
+                <li>
+                  <a href="#styleguide" class="nav-link nested-link">Style Guide</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#prototype" class="nav-link pl-0 side-nav-header">Prototype</a>
+              <ul class="nav flex-column">
+                <li>
+                  <a href="#usability-testing" class="nav-link nested-link">Usability Testing</a>
+                </li>
+                <li>
+                  <a href="#next-steps" class="nav-link nested-link">Next Steps</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#take-aways" class="nav-link pl-0 side-nav-header">Take-aways</a>
+            </li>
+        </div>
+      </nav>
+      <main class="container-fluid col-xs-12 py-5">
+        <!-- overview section begin -->
+        <div class="container col-md-7 px-md-3 col-sm-12" id="overview">
+          <h2 class="mb-3 text-center">Overview</h2>
+          <hr class="small-hr" />
+          <div class="pt-3 pb-5 anchor" id="problem">
+            <h3>Problem</h3>
+            <p>
+              There's no love like that of a love for a sports team. As odd as it may seem, and irrational as it may be,
+              people love their sports teams more than some family members. Originally from New York, I moved out to Los
+              Angeles a few years ago and began to feel frustrated because I could no longer watch any of my New York
+              teams on cable or streaming platforms.
+
+              <br>
+              <br>
+
+              Sports fans alike go through similar troubles. If their
+              team did play a nationally televised game, they need to have cable in order to watch it which can be
+              expensive. Streaming platforms, while cheaper, most likely don't have teams to choose from to watch. As a
+              last resort, fans may stream the game online only to find a website riddled with
+              advertisements, that takes too long to load, and is generally poorer quality than streaming and cable.
+            </p>
+          </div>
+          <div class="col-lg-12 py-3 flex-wrap d-flex justify-content-center">
+            <h3 class="img-subhead text-center">
+              Frustrating experiences like these leave fans to fend for themselves and frustrated and in some cases
+              leading them to ditch watching sports altogether.
+            </h3>
+            <img src="assets/frustrated-fan.svg" class="project-image w-75" alt="Adopt a Pet" data-aos="fade-right"
+              data-aos-duration="800" />
+          </div>
+          <!-- Solutions Single Row Begin -->
+          <div class="row align-items-center">
+            <div class="anchor col-lg-8" id="solution">
+              <h3>Solution</h3>
+              <p>
+                I designed A sports streaming app that allows users to watch all sports in one central location. The UI
+                will be clean and intuitive, displaying personalized content based on user location, preferences,
+                behavior, and viewing styles.
+
+              </p>
+            </div>
+            <div class="anchor pl-lg-5 col-lg-4 col-md-4 flex-column">
+              <h5>Role</h5>
+              <p>
+                UX/UI Designer, Researcher, Information Architect
+              </p>
+              <h5>Timeline</h5>
+              <p>
+                Aug. 2019 - Jan. 2020
+              </p>
+              <h5>Tools</h5>
+              <p>
+                Sketch, Photoshop, pen/paper, card-sorting, Invision
+              </p>
+            </div>
+            <div class="d-flex justify-content-center py-md-5">
+              <img class="w-50" src="assets/SportsStream Prototype.gif" alt="CityPups Interface">
+            </div>
+          </div>
+          <!-- solutions single row end -->
+          <div class="anchor py-md-2" id="methods">
+            <h3 class="pb-md-3">Methods</h3>
+            <div class="row flex-nowrap align-items-center justify-content-around ">
+              <div class="method-list col-xs-4 text-md-left text-center px-3">
+                <h5>Research</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Competitive Analysis
+                  </li>
+                  <li>
+                    Surveys
+                  </li>
+                  <li>
+                    Interviews
+                  </li>
+                  <li>
+                    Empathy Diagrams
+                  </li>
+                  <li>
+                    Personas
+                  </li>
+                </ul>
+              </div>
+              <div class="method-list col-xs-4 text-md-left text-center px-3">
+                <h5>Design</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    User Flows
+                  </li>
+                  <li>
+                    Sketches
+                  </li>
+                  <li>
+                    Wireframes
+                  </li>
+                  <li>
+                    UI Design & Style Guide
+                  </li>
+                  <li>
+                    High Fidelity Design
+                  </li>
+                  <li>
+                    Interactive Prototype
+                  </li>
+                </ul>
+              </div>
+              <div class="method-list col-xs-4 text-md-left text-center px-3">
+                <h5>Evaluate</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Usability Testing
+                  </li>
+                  <li>
+                    Re-iterating
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="anchor pb-5" id="my-role">
+            <h3>Contributions</h3>
+            <p>
+              Since this was an individual project, I progressed through the entire design process designing the user
+              experience, interface, conducting research, interviews, testing, protyping, and evaluation for the entire
+              project.
+            </p>
+          </div>
+        </div>
+        <!-- overview section end -->
+        <br />
+
+
+        <!-- research section begin -->
+
+        <div class="pt-3 pb-5 anchor" id="research">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="text-center">Research</h2>
+            <hr class="small-hr" />
+            <div class="anchor" id="survey">
+              <h4>Surveys</h4>
+              <p>
+                I surveyed 31 users on their sports viewing habits including how often they watched sports, how they
+                watched sports (what platform or channel), what was important to them in choosing a cable or streaming
+                service, and challenges to watching sports currently.
+              </p>
+              <div class="d-flex justify-content-center">
+                <figure class="figure py-6">
+                  <img src="assets/survey_question_challenges.svg" class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                  <figcaption class="figure-caption text-center">Of the 40 users surveyed, 50% (19) said that
+                    affordability was a challenge in watching sports because streaming packages cost too much. This was
+                    followed by users struggling with regional sports viewing in othr markets, and overall limited
+                    options in frequency of sports viewing.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <figure class="figure py-6">
+                  <img src="assets/survey_question_viewing_habits.svg.svg"
+                    class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                  <figcaption class="figure-caption text-center">In regards to viewing habits, over 15 users responded
+                    that they primarily tune into their favorite teams and sports. A little over five users said that
+                    they primarily tune into major events such as the superbowl followed by five users saying they watch
+                    sports all the time.</figcaption>
+                </figure>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <figure class="figure py-5">
+                  <img src="assets/survey_question_viewing_challenges.png"
+                    class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+
+                  <figcaption class="figure-caption text-center">Users reported affordability as being the most
+                    important feature of a streaming service followed by flexibility in contract/subscription, number of
+                    channels, the ease of use of the service, and options for upgrades as least important.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="anchor" id="interviews">
+              <h4>Interviews</h4>
+              <p>
+                I conducted interviews with 5 survey participants. I selected participants based on varying degrees in
+                which they watched sports, ways they viewed sports, and how they ranked their frustrations in watching
+                sports currently to ensure a range of responses.
+              </p>
+              <div class="container py-5">
+                <div class="row">
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow b-0">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small">I usually steer away from anything that resembles bundles or packages and
+                            upgrades. I'd <span class="highlight">rather have a
+                              streaming service that gives me exactly what I need without hidden things</span>.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small">Major sports packages are <span class="highlight">too much money and
+                              streams of games are too hard to find</span>. It's frustrating when I can't just watch the
+                            game I
+                            want to.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small">Cable has been good because there is no lag when watching a game. If a
+                            streaming service didn't have a lag <span class="highlight">I would pay for a seperate
+                              service to get all the games and events I watched</span>.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small"><span class="highlight">Not being able to tune into games outside of my
+                              immediate market/region is
+                              really frustrating</span>. I can't watch games in other cities without having cable or a
+                            sports
+                            package which obviously costs a lot of money.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="anchor" id="empathy-diagrams">
+              <h4>Empathy Diagrams</h4>
+              <p>
+                Using the surveys, secondary research, and interviews I created empathy maps and personas to get an
+                overview of the pain points and needs of my primary users.
+              </p>
+              <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/average_fan_annie_empathy_diagram.svg" alt="User Mapping">
+              </div>
+              <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/superfan_steve_empathy_diagram.svg" alt="User Mapping">
+              </div>
+            </div>
+            <div class="anchor" id="personas">
+              <h4>Personas</h4>
+              <p>
+                In order to get a better picture of our users and their needs, behaviors, and frustrations, a persona
+                was created.
+              </p>
+              <div class="row">
+                <div class="col-lg-6 py-5 d-flex justify-content-center">
+                  <div class="w-xl-100 w-lg-100 w-md-75 w-sm-75 card-rounded card shadow rounded-bottom">
+                    <img class="img-rounded card-img-top" src="assets/superfan-steve.jpg" alt="Card image cap">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title text-light">Superfan Steve</h5>
+                      <p class="card-text font-weight-bold text-light">39 Years Old</p>
+                      <p class="card-text font-weight-bold text-light">Software Developer</p>
+                    </div>
+                    <div class="rounded-bottom">
+                      <div class="card-body">
+                        <h5 class="font-weight-bold">Behaviors</h5>
+                        <ul>
+                          <li>
+                            He recently moved to LA and loves watching Dodgers baseball and more recently Rams football.
+                          </li>
+                          <br />
+                          <li>
+                            An Ohio native and Ohio State Buckeye grad, Steve will always have a special place in his
+                            heart for Ohio sports. When he wants to tune into those games, he browses specific websites
+                            to find free streams of games.
+
+                          </li>
+                          <br />
+
+                          <li>
+                            Steve has purchased a college football package so he watch the Buckeyes this season but he
+                            admits that it is expensive.
+
+                          </li>
+                          <br />
+
+                          <li>
+                            He asks friends who have moved to LA from other cities how they watch their sports teams to
+                            see if there are other avenues.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="font-weight-bold">Frustrations</h5>
+                        <ul>
+                          <li>
+                            Steve is frustrated because he just wants to be able to watch all of his favorite teams from
+                            LA or Ohio without having to break the bank and take too much time to find.
+
+                          </li>
+                          <br />
+
+                          <li>
+                            Since most packages are tied to cable providers or other streaming services, he finds it
+                            hard to commit and again it is very expensive to keep up. In the end, he wonders if it is
+                            worth it.
+
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="font-weight-bold">Goals</h5>
+                        <ul>
+                          <li>
+                            Steve wants to be able to watch the teams he loves. He'd be willing to pay a little extra to
+                            do so but not break the bank too much.
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 py-5 d-flex justify-content-center">
+                  <div class="w-xl-100 w-lg-100 w-md-75 w-sm-75 card-rounded card shadow rounded-bottom">
+                    <img class="img-rounded card-img-top" src="assets/average-fan-annie.jpg" alt="Card image cap">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title text-light">Average fan Annie</h5>
+                      <p class="card-text font-weight-bold text-light">27 Years 0ld</p>
+                      <p class="card-text font-weight-bold text-light">Marketing Professional</p>
+                    </div>
+                    <div class="rounded-bottom">
+                      <div class="card-body">
+                        <h5 class="font-weight-bold">Behaviors</h5>
+                        <ul>
+                          <li>
+                            Annie likes a few teams she can tune into but generally stays away from anything she has to
+                            pay for.
+                          </li>
+                          <br />
+                          <li>
+                            She'll browse websites and social media for a while to find a stream playing the game she
+                            wants to watch but will give up after a certain amount of time and continue on to something
+                            else.
+
+                          </li>
+                          <br />
+
+                          <li>
+                            Annie
+
+                          </li>
+                          <br />
+
+                          <li>
+                            She asks friends, and people in her building who have dogs for advice, so she can get some
+                            info from people that are closer to her situation .
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="font-weight-bold">Frustrations</h5>
+                        <ul>
+                          <li>
+                            Annie is frustrated that she can't watch her favorite teams casually without having to pay
+                            more than she wants to.
+
+                          </li>
+                          <br />
+
+                          <li>
+                            Annie hates that she can't watch any of her favorite teams while traveling for her job. She
+                            wishes their was some way she could tune into her teams without having to browse sites to
+                            find free streams.
+
+                          </li>
+                          <br />
+
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="font-weight-bold">Goals</h5>
+                        <ul>
+                          <li>
+                            Ellie wants to find a dog to adopt.
+                          </li>
+                          <br />
+                          <li>
+                            She wants to feel confident that they will be a great fit for each other - both in emotional
+                            connection, and practical factors related to her lifestyle.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- research section end -->
+        <br />
+
+
+
+        <!-- design section begin -->
+        <div class="pt-3 pb-5 anchor" id="design">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Design</h2>
+            <hr class="small-hr" />
+            <!-- ideation section begin -->
+            <div class="anchor" id="ideation">
+              <h4>Ideation</h4>
+              <p>
+                After gaining feedback from surveys, interviews,and secondary research, I moved to the design phase
+                which began with mapping out user flows, sketching, wireframes, a style guide, and finally high fidelity
+                screens.
+              </p>
+            </div>
+            <!-- ideation section ends -->
+
+            <!-- userflows section ends -->
+            <div class="anchor" id="user-flows">
+              <h4>User Flows</h4>
+              <p>
+                From the empathy diagram and personas I created, I came to the decision that subscription management,
+                registration/onboarding where users can choose their sports and teams, and watching a stream experiences
+                were focal points of the overall app experience. I mapped out user flows of those 3 experiences based on
+                the research I had completed thus far to see how users navigated the decision-making process.
+              </p>
+              <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/onboarding_flow.png" alt="User Mapping">
+              </div>
+              <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/change_subscription_flow.png" alt="User Mapping">
+              </div>
+              <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/watch_stream_flow.png" alt="User Mapping">
+              </div>
+            </div>
+            <!-- user flows section ends -->
+
+            <!-- skteches section begin -->
+            <div class="anchor" id="sketches">
+              <h4>Sketches</h4>
+              <p class="py-5">
+                I sketched out out the user flows above into screens taking inspiration from some of the designs I saw
+                in the Competitive analysis. The goal of the sketches was to get some semblence of what the design would
+                look like while keeping it open and flexible for further iteration.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/registration_screens_sketch_main.png" alt="User Mapping">
+              </div>
+              <p class="py-5">
+                I wanted to give users the option of signing in via social networks and the generic method of
+                email/password combination. I sketched out a design that kept the interface simple and uncluttered using
+                large thumbnails for choosing sports, teams, and subscription types. The intention was to give users
+                easily digestible information.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/registration_screens_sketch_main_2.png" alt="User Mapping">
+              </div>
+            </div>
+            <!-- skteches section ends -->
+
+            <!-- wireframe section begin -->
+            <div class="anchor" id="wireframe">
+              <h4>Wireframe</h4>
+              <p class="py-5">
+                Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher
+                street art Carles, stumptown gluten-free Kickstarter
+                artisan Wes Anderson wolf pug. Godard sustainable you
+                probably haven't heard of them, vegan farm-to-table
+                Williamsburg slow-carb readymade disrupt deep v.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/sportsstream_wireframes.svg" alt="User Mapping">
+              </div>
+            </div>
+            <!-- wireframe section ends -->
+
+            <!-- styleguide section begin -->
+            <div class="anchor" id="styleguide">
+              <h4>Style Guide</h4>
+              <p class="py-5">
+                The style guide was challenging because I wanted to find the right balance between sporty, fresh, and
+                minimal design. I gathered some mood board material for some inspiration.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100" src="assets/sportsstream_moodboard-transparent.png" alt="User Mapping">
+              </div>
+              <p class="py-5">
+                Ultimately I went with a blue and red color scheme with some grayscale as well to have a balance of
+                trust but also drive associated with sports. I chose Noto Sans TC as the font because it had a good
+                balance of sleek but strong for a sports fan. I created a style guide to ensure I stayed on brand with
+                my colors and typography.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/sportsstream_style_guide.svg" alt="User Mapping">
+              </div>
+            </div>
+            <!-- styleguide section ends -->
+
+          </div>
+        </div>
+        <!-- design section end -->
+        <br />
+
+
+
+        <!-- prototype section begin -->
+        <div class="pt-3 pb-5 anchor" id="prototype">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Prototype</h2>
+            <hr class="small-hr" />
+            <p>
+              For the initial iteration, my goal was to validate if the initial onboarding experience guided users
+              efficiently through the inputs, the home tab where users can select streams to watch was pleasing to the
+              user, the watch stream viewing interface provided simple interactions such as play, pause, etc., and
+              changing subscription settings made sense for the user. Ideally, everything should make sense for the user
+              but I wanted to make sure the subscription settings especially did so because it was a sticking point for
+              users in the interviews and surveys.
+              <br>
+              <br>
+              I also wanted to identify any obstacles or hesitations users found while performing certain tasks. If
+              there were any, they would need to be addressed in future rounds of usability tests and iterations.
+            </p>
+            <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+              <h3 class="mb-3">Prototype Screens</h3>
+              <img class="w-100" src="assets/Hi-Fi_sportsstream_screens.svg" alt="User Mapping">
+            </div>
+          </div>
+        </div>
+        <!-- prototype section end -->
+        <br />
+
+
+
+        <!-- evaluation section begin -->
+        <div class="pt-3 pb-5 anchor" id="Evaluation">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Evaluation</h2>
+            <hr class="small-hr" />
+
+            <!-- usability testing section begin -->
+            <div class="anchor" id="usability-testing">
+              <h4>Usability Testing</h4>
+              <p>
+                After creating the hi-fi screens I conducted several rounds of usability tests to see where I could
+                improve upon the design and functionality of the app.
+                <br>
+                <br>
+                Round 1 came away with the following conclusions:
+              </p>
+              <ul class="font-italic">
+                <li>Overall, the flow of the app was good. Users seemed to be able to move around the app and complete
+                  tasks such as unsubscribing, onboarding, and watching a game easily.
+                </li>
+                <li>The Home and Watch tabs needed to be renamed or one needed to be removed. Users had a hard time
+                  distinguishing between the two.
+                </li>
+                <li>In the first iteration of the prototype, the Subscription “toggle” switch to pause a subscription
+                  confused users.
+                </li>
+                <li>Tapping to pause on the full screen view of a game wasn’t clearly accessible. The controls needed to
+                  be visible for a brief period to notify users that that is an available feature, similar to YouTube.
+                </li>
+                <li>The Subscription card features needed to be presented. Users wanted to know what was under each
+                  category so they had a better idea of where they were going.
+                </li>
+              </ul>
+              <p>
+                I made the necessary changes and performed another round of testing with several more users. The
+                additional testing helped me further fine tune anything that might need some attention.
+                <br>
+                <br>
+                Round 2 came away with additional conclusions:
+              </p>
+              <ul class="font-italic">
+                <li>The Subscription Page Needed Interaction within the prototype.
+                </li>
+                <li>Confirmation messages were needed after successfully creating an account, cancel or pausing a
+                  subscription, or any errors states in general.
+                </li>
+                <li>Trending could be a nice feature as a tab where a user could access the latest trending topics.
+                </li>
+              </ul>
+              <p>
+                I made some minor changes adding confirmation messages and I thought the trending tab instead of Home
+                tab was a really good idea. I added interaction within the choosing teams onboarding section and the
+                changing subscription sections to make the experience an immersive one.
+              </p>
+            </div>
+            <!-- usability testing section ends -->
+
+            <!-- results section begin -->
+            <div class="anchor" id="results">
+              <h4>Results</h4>
+              <p>
+                I gathered a lot of positive feedback on the prototype, from users with different preferences for dog
+                types,
+                different lifestyle constraints, and various attitudes towards certain dog attributes Here's a summary
+                of how well people were able to complete tasks in the different scenarious above as well as users'
+                comments on the app overall.
+              </p>
+              <ul class="font-italic">
+                <li>Users were able to complete tasks such as choosing preferences for dogs within the intake flow,
+                  viewing pictures/videos and more information on a speciifc dog, adjusting the filters for results, and
+                  were able to schedule an appointment with a rep. </li>
+                <li>Several users commented on having the ability to choose more than one option for amount of distance
+                  willing to travel, and their lifestyle (since people don't fit into one lifestyle usually). </li>
+                <li>Other users noted that the intake flow could contain more questions regarding vaccinations,
+                  personality, trained or not, breed selection options, and the ability to choose between adoption
+                  agencies. All of these were great suggestions that I would 100% consider adding into the next design
+                  sprint.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- results section ends -->
+
+        <!-- next steps section begin -->
+        <div class="pt-3 pb-5 anchor" id="next-steps">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Next Steps</h2>
+            <hr class="small-hr" />
+            <p class="text-dark">
+              The journey in creating the app was a long and arduous one that presented a ton of challenges. In the end,
+              I had to go back and forth on design, functionality, and what the most important features of the app
+              should be. I think the hardest part in designing for the user is getting bogged down with the minutia of
+              things. It’s good to be detailed oriented but designing for detail at every step of the process could
+              hinder the outcome of having a really useful product that is centered around the user.
+            </p>
+            <p class="text-dark">
+              In the end I would have had a product
+              where you injected a lot of goodies you thought were cool but didn’t reflect what users were saying. I
+              know for myself, I wanted to design so many “cool” features but had to reign myself in to focus more on
+              the MVP, what information users were giving me in the research stage, and designing for the user not what
+              I wanted.
+            </p>
+            <p class="text-dark">
+              Going back to the research, surveys, and interviews helped keep me on track. Whenever I would go slightly
+              astray, I reminded myself to come back to the research to keep my design on track and user-focused.
+            </p>
+          </div>
+        </div>
+        <!-- next steps section ends -->
+        <!-- next steps section end -->
+        <br />
+
+
+
+        <!-- take aways section begin -->
+        <div class="pt-3 pb-3 anchor" id="take-aways">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Take-Aways</h2>
+            <hr class="small-hr" />
+            <p class="text-dark">
+              The final MVP prototype came out really well I think but can definitely be improved upon. There’s a bunch
+              of ideas I have circling around in my head on what could be implemented in future designs. Alas, the next
+              steps will be to test more and see how users are responding. If any new features are to be put into the
+              app, I’ll use an agile approach to my process by testing and creating and testing some more.
+            </p>
+          </div>
+        </div>
+        <!-- take aways section end -->
+        <br />
+
+
+
+      </main>
+    </div>
+  </div>
+  <a class="hidden" href="" id="scroll-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  <!-- Footer -->
+  <footer class="page-footer pt-md-5 mt-md-5 pt-sm-2 mt-sm-2">
+    <!-- Footer Elements -->
+    <div class="container d-flex justify-content-center">
+      <!-- Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 pt-5 pb-2">
+          <div class="flex-center">
+            <!-- Facebook -->
+            <a class="sl-ic" href="" target="_blank">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="sl-ic" href="" target="_blank">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3">
+              </i>
+            </a>
+            <!--Dribbble -->
+            <a class="sl-ic" href="" target="_blank">
+              <i class="fab fa-dribbble fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> brettk-ux.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <section class="test2"></section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
