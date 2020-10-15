@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1jLrfISsLUcRiwgNl0koSfsS6lylj0E7h">
+  <link rel="stylesheet" href="css/hover-min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>CityPups Case Study</title>
+</head>
+
+<body data-spy="scroll" data-target="#side">
+  <script>
+    document.body.className = "js";
+  </script>
+  <header>
+    <nav class="navbar navbar-project navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand nav-logo pl-lg-5" href="index.html">Brett<span id="logo-dot">.</span>Kaplan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav pr-lg-5">
+          <li class="nav-item active">
+            <a class="main-nav-link hvr-underline-from-center mx-3 px-0" href="index.html">Portfolio <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a class="main-nav-link hvr-underline-from-center mx-3 px-0" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="main-nav-link hvr-underline-from-center mx-3 px-0" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <progress value="0" max="1">
+      <!-- Older browsers look to the old div style of progress bars -->
+      <!-- Newer browsers ignore this stuff but it allows older browsers to 
+              still have a progress bar. -->
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  </header>
+  <div class="jumbotron-fluid pb-5 pt-3">
+    <h1 class="project-title project-title-sportsstream text-center pt-4">
+      CityPups
+    </h1>
+    <hr class="small-hr" />
+    <p class="project-subtitle text-center pt-3">
+      A website to help you find your perfect dog
+    </p>
+    <div class="d-flex justify-content-center">
+      <img class="w-50 h-50" src="assets/CityPupsMocks_Big.png" alt="SportsStream Hero Image">
+    </div>
+  </div>
+  <div class="position-relative" id="content">
+    <div class="row h-100">
+      <nav class="hidden pl-4 bg-light side-nav" id="secondary-nav">
+        <div class="mt-5 mb-3 sticky-top sticky-offset" id="side">
+          <ul class="nav flex-md-column" id="sidenav">
+            <li class="nav-item">
+              <a href="#overview" class="nav-link active pl-0 side-nav-header">Overview</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#problem">Problem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#solution">Solution</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#methods">Our Approach</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#my-role">My Contribution</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#research" class="nav-link pl-0 side-nav-header">Research</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#comp-analysis">Competitive Analysis</a>
+                </li>
+                <li>
+                  <a class="nav-link nested-link" href="#interviews">Interviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nested-link" href="#personas">Personas</a>
+                </li>
+                <li>
+                  <a href="#user-mapping" class="nav-link nested-link">User Mapping</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#design" class="nav-link pl-0 side-nav-header">Design</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#ideation" class="nav-link nested-link">Ideation</a>
+                </li>
+                <li>
+                  <a href="#sketches" class="nav-link nested-link">Sketches</a>
+                </li>
+                <!-- <li>
+                  <a href="#wireframe" class="nav-link nested-link">Wireframe</a>
+                </li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#prototype" class="nav-link pl-0 side-nav-header">Prototype</a>
+              <ul class="nav flex-column">
+                <li>
+                  <a href="#usability-testing" class="nav-link nested-link">Usability Testing</a>
+                </li>
+                <li>
+                  <a href="#next-steps" class="nav-link nested-link">Next Steps</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#take-aways" class="nav-link pl-0 side-nav-header">Take-aways</a>
+            </li>
+        </div>
+      </nav>
+      <main class="container-fluid col-xs-12 py-5">
+        <!-- overview section begin -->
+        <div class="container col-md-7 px-md-3 col-sm-12 mx-auto" id="overview">
+          <h2 class="mb-3 text-center">Overview</h2>
+          <hr class="small-hr" />
+          <div class="pt-3 pb-5 anchor" id="problem">
+            <h3>Problem</h3>
+            <p>
+              While owning any dog can be a challenging albeit rewarding
+              experience, city dwellers looking to adopt their furr-ever
+              friend have more constraints on them than their rural
+              counterparts. Potential owners have to take many factors
+              into consideration such as the size of the dog, breed,
+              temperament & disposition, and of course age to name a
+              few. In addition, owners have to take their own lifestyle
+              into account to ensure the dog won't be neglected. Taking
+              the above into account, city goers find it difficult to
+              find a dog that's right for them.
+            </p>
+          </div>
+          <div class="col-lg-12 py-3 flex-wrap d-flex justify-content-center">
+            <h3 class="img-subhead text-center">
+              In the end, all anyone wants is a best friend that fits
+              with them (almost) perfectly.
+            </h3>
+            <img src="assets/Adopt-a-pet-pana.svg" class="project-image w-50 h-50" alt="Adopt a Pet"
+              data-aos="fade-right" data-aos-duration="800" />
+          </div>
+          <!-- Solutions Single Row Begin -->
+          <div class="row align-items-center">
+            <div class="anchor col-lg-8" id="solution">
+              <h3>Solution</h3>
+              <p>
+                I designed an onboarding/user intake experience where the user
+                answers questions to narrow down their preferences in searching for a dog. The goal of the
+                user is to not just find out what kind of dog they want, but more specifically what kind of dog
+                a user should
+                consider based on a multitude of factors including location,
+                lifestyle, hobbies, work-life balance, dog size, dog temperament, and dog health. </p>
+            </div>
+            <div class="anchor pl-lg-5 col-lg-4 col-md-4 flex-column">
+              <h5>Role</h5>
+              <p>
+                UX Designer
+              </p>
+              <h5>Timeline</h5>
+              <p>
+                Jan. - Feb. 2020
+              </p>
+              <h5>Tools</h5>
+              <p>
+                Sketch, Adobe XD, Photoshop, Whiteboard
+              </p>
+            </div>
+            <div class="d-flex justify-content-center py-md-3">
+              <img class="w-100 h-100" src="assets/CityPupsMocks_Big.png" alt="CityPups Interface">
+            </div>
+          </div>
+          <!-- solutions single row end -->
+          <div class="anchor py-md-2" id="methods">
+            <h3 class="pb-md-3">Methods</h3>
+            <div class="row align-items-center justify-content-around ">
+              <div class="method-list col-xs-4 text-md-left text-center px-3">
+                <h5>Research</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Interviews
+                  </li>
+                  <li>
+                    Personas
+                  </li>
+                </ul>
+              </div>
+              <div class="method-list col-xs-4 text-md-left text-center px-3">
+                <h5>Design</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Sketches
+                  </li>
+                  <li>
+                    Wireframes
+                  </li>
+                  <li>
+                    High Fidelity Design
+                  </li>
+                  <li>
+                    Interactive Prototype
+                  </li>
+                </ul>
+              </div>
+              <div class="method-list col-xs-4 text-md-left text-center px-3">
+                <h5>Evaluate</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Usability Testing
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="anchor pb-5" id="my-role">
+            <h3>Contributions</h3>
+            <p>
+              As the UX Designer, I conducted a competitive analysis, several sketch excercises, created
+              wireframes, high-fidelity designs, and an interactive prototype.
+            </p>
+            <p> After designing the prototype, I conducted a round of usability tests with 5 users.
+            </p>
+          </div>
+        </div>
+        <!-- overview section end -->
+        <br />
+
+
+        <!-- research section begin -->
+
+        <div class="pt-3 pb-5 anchor" id="research">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="text-center">Research</h2>
+            <hr class="small-hr" />
+            <div class="anchor" id="comp-analysis">
+              <h4>Competitive Analysis</h4>
+              <p>
+                I researched the market for products that catered to pet adoption to see what worked and what didn't
+                work. I came across three websites; Rover & Petfinder were pet-oriented sites and Apartment List was
+                an apartment-finder site
+                that had great inspiration for a user-preference flow.
+              </p>
+              <div class="d-flex justify-content-center">
+                <figure class="figure py-6">
+                  <img src="assets/petfinder site.png" class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                  <figcaption class="figure-caption text-center">Petfinder provides easy access for a user to search for
+                    a
+                    pet upon
+                    entrance to the homepage.</figcaption>
+                </figure>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <figure class="figure py-6">
+                  <img src="assets/rover-site-comp-analysis.png" class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                  <figcaption class="figure-caption text-center">Rover's results interface gives users the ability to
+                    view
+                    their
+                    results, adjust the area on the map to search in, and edit filters to adjust their results within
+                    one
+                    screen.
+                    I thought this interface would allow CityPups users to easily search for the desired results without
+                    having to switch screens anytime they wanted to change a preference.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="d-flex justify-content-center flex-wrap">
+                <figure class="figure py-5">
+                  <img src="assets/apartmentlist-comp-analysis-1.png"
+                    class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                </figure>
+                <figure class="figure py-5">
+                  <img src="assets/apartmentlist-comp-analysis-2.png"
+                    class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                </figure>
+                <figure class="figure py-5">
+                  <img src="assets/apartmentlist-comp-analysis-3.png"
+                    class="comp-img figure-img img-fluid rounded w-100"
+                    alt="A generic square placeholder image with rounded corners in a figure.">
+                </figure>
+                <figcaption class="figure-caption text-center">Apartmentlist.com gave me inspiration for the
+                  match-making
+                  interface where users can find dogs that match their preferences.
+                </figcaption>
+              </div>
+            </div>
+            <div class="anchor" id="interviews">
+              <h4>Interviews</h4>
+              <p>
+                While I didn't conduct the initial interviews, it's important to include them in the case study to
+                better
+                understand the context of design decisions that were made.
+              </p>
+              <div class="container py-5">
+                <div class="row">
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small">A lot of sites tell you if the dog is 'good around other dogs'. I think
+                            this generally
+                            means other dogs in the household - <span class="highlight">what about in public? I walk my
+                              dog on the street
+                              and in dog parks with LOTS of other animals.</span> I'd want to know that
+                            they would be ok with that.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small"><span class="highlight">I like to see lots of photos - or even better,
+                              videos! They help create an
+                              instant connection</span>, and it's a little easier to see how big they are, get a feel
+                            for their
+                            energy level, and imagine if my small apartment would be a good home for them.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small">I generally look for older dogs - I usually assume they are more
+                            well-trained - but that's not always the case. Really, <span class="highlight">I want to
+                              find a dog that is
+                              comfortable walking with me in the city, and won't get freaked out by all the
+                              people</span>,
+                            pigeons, and things to do!</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 py-4">
+                    <div class="card h-auto br-card shadow">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p class="p-small">I would never want to adopt a dog that needed more activity or space than I
+                            could provide. <span class="highlight">I try to find breeds that are generally less
+                              hyper</span>, but it all really depends
+                            on the personality of the dog.</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="anchor" id="personas">
+              <h4>Personas</h4>
+              <p>
+                In order to get a better picture of our users and their needs, behaviors, and frustrations, a persona
+                was created.
+              </p>
+              <div class="py-5 d-flex justify-content-center">
+                <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 card-rounded card shadow">
+                  <img class="img-rounded card-img-top" src="assets/ellie-persona-citypups.png" alt="Card image cap">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-dark">Ellie</h5>
+                    <p class="card-text font-weight-bold text-dark">27 Years 0ld</p>
+                    <p class="card-text font-weight-bold text-dark">NYC</p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">Behaviors</h5>
+                    <ul>
+                      <li>
+                        Now that she does not have roommates, she finally feels "ready" for the responsibility, and
+                        companionship of a dog.
+                      </li>
+                      <br />
+                      <li>
+                        She follows some adoption agencies on instagram, and even "saves" some dogs she wants to
+                        adopt.
+
+                      </li>
+                      <br />
+
+                      <li>
+                        Ellie has spoken to adoption agency representatives to ask questions. This has been helpful,
+                        but is very time consuming to find the right contact, or make an appointment.
+
+                      </li>
+                      <br />
+
+                      <li>
+                        She asks friends, and people in her building who have dogs for advice, so she can get some
+                        info from people that are closer to her situation .
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">Frustrations</h5>
+                    <ul>
+                      <li>
+                        Ellie hasn't taken action because she doesn't feel 100% confident that a dog will be a good
+                        fit for her AND the dog.
+
+                      </li>
+                      <br />
+
+                      <li>
+                        Since most adoption sites focus on making a connection between people and dogs, she falls in
+                        love with a dog that needs more space, attention, or activity than she can provide, ultimately
+                        leading to disappointment, and more indecision.
+
+                      </li>
+                      <br />
+
+                      <li>
+                        Descriptions of dogs on sites are too general - for example, it may say "this dog doesn't
+                        require a lot of space" - but how small is too small?
+
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">Goals</h5>
+                    <ul>
+                      <li>
+                        Ellie wants to find a dog to adopt.
+                      </li>
+                      <br />
+                      <li>
+                        She wants to feel confident that they will be a great fit for each other - both in emotional
+                        connection, and practical factors related to her lifestyle.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="anchor" id="user-mapping">
+              <h4>User Mapping</h4>
+              <p>
+                I focused on compiling notes on the user research and personas that were created from interviews. I
+                iterated 3 versions of the user map involving the primary user and the end goal for the user.
+              </p>
+              <div class="w-xl-75 w-lg-75 w-md-75 w-sm-75 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/citypups-user-mapping.JPG" alt="User Mapping">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- research section end -->
+        <br />
+
+
+
+        <!-- design section begin -->
+        <div class="pt-3 pb-5 anchor" id="design">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Design</h2>
+            <hr class="small-hr" />
+            <!-- ideation section begin -->
+            <div class="anchor" id="ideation">
+              <h4>Ideation</h4>
+              <p>
+                With the persona, competitive analysis, and interview data, I began to flesh out ideas of potential
+                solutions using some sketching excercises. I started with the sketch excercise, Crazy 8s, to get an
+                idea on paper. I stuck to drawing the preference input flow because I thought that was the pertinent
+                part of the solution.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/crazy-8-sketch-citypups.jpg" alt="User Mapping">
+              </div>
+            </div>
+            <!-- ideation section ends -->
+
+            <!-- skteches section begin -->
+            <div class="anchor" id="sketches">
+              <h4>Sketches</h4>
+              <p>
+                I proceeded to sketch out several initial screens that included one of the previous crazy8 sketches (a
+                loading screen), and then the 'Results' interface, followed by 'View a dog' page.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/citypups-solution-sketch.jpg" alt="CityPups Solution Sketches">
+              </div>
+              <p>
+                I sketched out additional pieces of the solution and eventually put it together in a storyboard which I
+                would use as a guide for the wireframes and final prototype.
+              </p>
+              <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+                <img class="w-100 shadow" src="assets/citypups-storyboard-sketches.jpg"
+                  alt="CityPups Storyboard Sketches">
+              </div>
+            </div>
+            <!-- skteches section ends -->
+
+            <!-- wireframe section begin -->
+            <!-- <div class="anchor" id="wireframe">
+              <h4>Wireframe</h4>
+              <p>
+                Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher
+                street art Carles, stumptown gluten-free Kickstarter
+                artisan Wes Anderson wolf pug. Godard sustainable you
+                probably haven't heard of them, vegan farm-to-table
+                Williamsburg slow-carb readymade disrupt deep v. Meggings
+                seitan Wes Anderson semiotics, cliche American Apparel
+                whatever. Helvetica cray plaid, vegan brunch Banksy
+                leggings +1 direct trade. Wayfarers codeply PBR selfies.
+                Banh mi McSweeney's Shoreditch selfies, forage
+                fingerstache food truck occupy YOLO Pitchfork fixie iPhone
+                fanny pack art party Portland.
+              </p>
+            </div> -->
+            <!-- wireframe section ends -->
+          </div>
+        </div>
+        <!-- design section end -->
+        <br />
+
+
+
+        <!-- prototype section begin -->
+        <div class="pt-3 pb-5 anchor" id="prototype">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Prototype</h2>
+            <hr class="small-hr" />
+            <p>
+              For the initial iteration, my goal was to validate if the design helps users filter down to their
+              preferences, includes all important information pertaining to the dog, and feels comfortable within the
+              interface. I hoped that usability tests could help uncover any improvements and obstacles.
+              <br>
+              <br>
+              I used Adobe XD to build the hi-fidelity design, prototype, and micro-interactions.
+            </p>
+            <div class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5">
+              <img class="w-100" src="assets/CityPups Screens-2x-transparent.png" alt="CityPups Hi-Fi Screens">
+            </div>
+          </div>
+        </div>
+        <!-- prototype section end -->
+        <br />
+
+
+
+        <!-- evaluation section begin -->
+        <div class="pt-3 pb-5 anchor" id="Evaluation">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Evaluation</h2>
+            <hr class="small-hr" />
+
+            <!-- usability testing section begin -->
+            <div class="anchor" id="usability-testing">
+              <h4>Usability Testing</h4>
+              <p>
+                I moderated usability tests on five users who either owned dogs or were prospective dog owners in
+                order to gain feedback from first-time owners and seasoned owners.
+                <br>
+                <br>
+                In order to get more granular feedback from users on the higher level user goals, I asked users to
+                consider several scenarios and to find the best way to achieve an end goal. These included:
+              </p>
+              <ul class="font-italic">
+                <li>You decide you want to adopt a dog but you want to make sure that the dog is right for you and
+                  your lifestyle. </li>
+                <li>Once you have results of various dogs, you want to view more information about a specific dog as
+                  well as view some pictures/videos. </li>
+                <li>After searching through a few dogs, you decide you want to expand the distance of how far you're
+                  willing to travel and a few of the dogs personality traits. </li>
+                <li>After viewing some information on a dog, you think you've found a great pup and you want to
+                  schedule an appointment with a representative. </li>
+              </ul>
+
+            </div>
+            <!-- usability testing section ends -->
+
+            <!-- results section begin -->
+            <div class="anchor" id="results">
+              <h4>Results</h4>
+              <p>
+                I gathered a lot of positive feedback on the prototype, from users with different preferences for dog
+                types,
+                different lifestyle constraints, and various attitudes towards certain dog attributes Here's a summary
+                of how well people were able to complete tasks in the different scenarious above as well as users'
+                comments on the app overall.
+              </p>
+              <ul class="font-italic">
+                <li>Users were able to complete tasks such as choosing preferences for dogs within the intake flow,
+                  viewing pictures/videos and more information on a speciifc dog, adjusting the filters for results, and
+                  were able to schedule an appointment with a rep. </li>
+                <li>Several users commented on having the ability to choose more than one option for amount of distance
+                  willing to travel, and their lifestyle (since people don't fit into one lifestyle usually). </li>
+                <li>Other users noted that the intake flow could contain more questions regarding vaccinations,
+                  personality, trained or not, breed selection options, and the ability to choose between adoption
+                  agencies. All of these were great suggestions that I would 100% consider adding into the next design
+                  sprint.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- results section ends -->
+
+        <!-- next steps section begin -->
+        <div class="pt-3 pb-5 anchor" id="next-steps">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Next Steps</h2>
+            <hr class="small-hr" />
+            <p>
+              The next steps in designing this interface will be to make the edits users gave feedback on in the
+              usability tests. As users suggested, the intake flow should contain questions surrounding breed and
+              personality so users
+              can filter down further to find their perfect companion.
+
+              ​<br>
+              <br>
+
+              Another feature I intend to add in the next iteration for usability testing will be map interactivity so
+              users can search through the map to find dogs.
+            </p>
+          </div>
+        </div>
+        <!-- next steps section ends -->
+        <!-- next steps section end -->
+        <br />
+
+
+
+        <!-- take aways section begin -->
+        <div class="pb-3 anchor" id="take-aways">
+          <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+            <h2 class="mb-3 text-center">Take-Aways</h2>
+            <hr class="small-hr" />
+            <p class="text-dark">
+              The next steps in designing this interface will be to make the edits users gave feedback on in the
+              usability tests. As users suggested, the intake flow should contain questions surrounding breed and
+              personality so users
+              can filter down further to find their perfect companion.
+
+              ​<br>
+              <br>
+
+              Another feature I intend to add in the next iteration for usability testing will be map interactivity so
+              users can search through the map to find dogs.
+            </p>
+          </div>
+        </div>
+        <!-- take aways section end -->
+        <br />
+
+
+
+      </main>
+    </div>
+  </div>
+  <a class="hidden" href="" id="scroll-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  <!-- Footer -->
+  <footer class="page-footer pt-md-5 mt-md-5 pt-sm-2 mt-sm-2">
+    <!-- Footer Elements -->
+    <div class="container d-flex justify-content-center">
+      <!-- Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 pt-5 pb-2">
+          <div class="flex-center">
+            <!-- Facebook -->
+            <a class="sl-ic" href="" target="_blank">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="sl-ic" href="" target="_blank">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3">
+              </i>
+            </a>
+            <!--Dribbble -->
+            <a class="sl-ic" href="" target="_blank">
+              <i class="fab fa-dribbble fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright:
+      <a href="https://brettkaplan.design/">brettkaplan.design</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <section class="test2"></section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
