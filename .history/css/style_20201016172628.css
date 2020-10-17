@@ -607,7 +607,7 @@ a.nav-link.nested-link:focus {
   padding-top: 12em;
   min-height: 400px;
   height: 100vh;
-  background: url('../assets/brett-portfolio-home-hero.png') no-repeat;
+  background: url('/assets/brett-portfolio-home-hero.png') no-repeat;
   /* Keep the inherited background full size. */
   background-attachment: fixed;
   background-size: cover;
