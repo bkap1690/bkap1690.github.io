@@ -788,7 +788,9 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    background: url('../assets/brett-portfolio-home-hero-tablet.png') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
     background-size: cover;
   }
 }
@@ -814,14 +816,6 @@ a.nav-link.nested-link:focus {
 
   p {
     font-size: 1.1rem !important;
-  }
-
-  .top-content {
-    padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
-    background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
-    background-size: cover;
   }
 
 }

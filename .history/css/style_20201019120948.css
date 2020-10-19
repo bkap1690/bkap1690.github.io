@@ -224,6 +224,22 @@ header {
 
 /************************** HOME PAGE STYLES **************************/
 
+/* .full-image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 500px;
+  background-image: url("https://picjumbo.com/wp-content/uploads/work-in-progress-web-design-layout-ideas_free_stock_photos_picjumbo_HNCK4896-2210x1474.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+} */
+
 /* Image Style */
 
 .test {
@@ -785,12 +801,6 @@ a.nav-link.nested-link:focus {
   .rellax {
     transform: translate3d(0, 0, 0) !important;
   }
-
-  .top-content {
-    padding-top: 8em;
-    background: url('../assets/brett-portfolio-home-hero-tablet.png') no-repeat;
-    background-size: cover;
-  }
 }
 
 @media (max-width: 510px) {
@@ -818,10 +828,7 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
-    background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
-    background-size: cover;
+    background: url('../assets/brett-portfolio-home-hero.png') no-repeat;
   }
 
 }
