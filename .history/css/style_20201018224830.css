@@ -825,12 +825,6 @@ a.nav-link.nested-link:focus {
     padding-top: 8em;
     background: url('../assets/brett-portfolio-home-hero.png') no-repeat;
   }
-
-  .navbar {
-    background: rgb(255, 255, 255) !important;
-    border-bottom: rgba(196, 196, 196, 0.577) solid 1px;
-  }
-
 }
 
 

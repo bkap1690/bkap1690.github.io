@@ -167,12 +167,7 @@ header {
   transition: 0.5s ease;
 }
 
-.navbar.scrolled {
-  background: rgb(255, 255, 255) !important;
-  border-bottom: rgba(196, 196, 196, 0.577) solid 1px;
-}
-
-.nav-light {
+.scrolled {
   background: rgb(255, 255, 255) !important;
   border-bottom: rgba(196, 196, 196, 0.577) solid 1px;
 }
@@ -823,14 +818,7 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    background: url('../assets/brett-portfolio-home-hero.png') no-repeat;
   }
-
-  .navbar {
-    background: rgb(255, 255, 255) !important;
-    border-bottom: rgba(196, 196, 196, 0.577) solid 1px;
-  }
-
 }
 
 
