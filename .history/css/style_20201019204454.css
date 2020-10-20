@@ -776,6 +776,10 @@ a.nav-link.nested-link:focus {
     font-size: 3em;
   }
 
+  .hvr-underline-from-center {
+    display: none;
+  }
+
   /* Home Image mobile styles */
 
   .card-round-sm {
@@ -822,6 +826,10 @@ a.nav-link.nested-link:focus {
     height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
     background-size: cover;
+  }
+
+  .hvr-underline-from-center {
+    display: none;
   }
 
 }
