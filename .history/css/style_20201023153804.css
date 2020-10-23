@@ -839,10 +839,6 @@ a.nav-link.nested-link:focus {
 
 @media (max-width: 575.98px) {
 
-  #secondary-nav {
-    display: none !important;
-  }
-
   h1,
   h2,
   h3,
