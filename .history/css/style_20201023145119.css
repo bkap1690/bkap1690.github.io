@@ -736,8 +736,17 @@ a.nav-link.nested-link:focus {
 /*************************** MEDIA QUERIES ***************************/
 
 
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-@media (min-width: 768px) and (max-width: 967.98px) {
+  .card-round-sm {
+    border-radius: 16px 0px 16px 0px;
+  }
+
+} */
+
+
+
+@media (max-width: 967.98px) {
   #secondary-nav {
     display: none !important;
   }
@@ -780,6 +789,9 @@ a.nav-link.nested-link:focus {
 
   /* Home Image mobile styles */
 
+  .card-round-sm {
+    border-radius: 16px 16px 0px 0px;
+  }
 
   .rellax {
     transform: translate3d(0, 0, 0) !important;
@@ -787,15 +799,12 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-tablet.png') no-repeat;
     background-size: cover;
-    background-position: center;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (max-width: 510px) {
 
   h1,
   h2,
@@ -824,49 +833,6 @@ a.nav-link.nested-link:focus {
     height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
     background-size: cover;
-    background-position: center;
-  }
-
-  .card-round-sm {
-    border-radius: 16px 16px 0px 0px;
-  }
-
-}
-
-@media (max-width: 575.98px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 1.8rem !important;
-  }
-
-  .email-small {
-    font-size: 1.5rem !important;
-  }
-
-  .navbar-pt {
-    padding-top: 40px;
-  }
-
-  p {
-    font-size: 1.1rem !important;
-  }
-
-  .top-content {
-    padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
-    background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .card-round-sm {
-    border-radius: 16px 16px 0px 0px;
   }
 
 }

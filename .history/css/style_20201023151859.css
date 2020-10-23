@@ -736,8 +736,17 @@ a.nav-link.nested-link:focus {
 /*************************** MEDIA QUERIES ***************************/
 
 
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-@media (min-width: 768px) and (max-width: 967.98px) {
+  .card-round-sm {
+    border-radius: 16px 0px 16px 0px;
+  }
+
+} */
+
+
+
+@media (max-width: 967.98px) {
   #secondary-nav {
     display: none !important;
   }
@@ -787,11 +796,8 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-tablet.png') no-repeat;
     background-size: cover;
-    background-position: center;
   }
 }
 
@@ -824,7 +830,6 @@ a.nav-link.nested-link:focus {
     height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
     background-size: cover;
-    background-position: center;
   }
 
   .card-round-sm {
@@ -857,12 +862,11 @@ a.nav-link.nested-link:focus {
   }
 
   .top-content {
-    padding-top: 8em;
+    padding-top: 3em;
     width: 100vw;
     height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-mobile.png') no-repeat;
     background-size: cover;
-    background-position: center;
   }
 
   .card-round-sm {

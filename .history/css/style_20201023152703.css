@@ -787,8 +787,6 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-tablet.png') no-repeat;
     background-size: cover;
     background-position: center;

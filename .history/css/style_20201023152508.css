@@ -737,7 +737,7 @@ a.nav-link.nested-link:focus {
 
 
 
-@media (min-width: 768px) and (max-width: 967.98px) {
+@media (max-width: 967.98px) {
   #secondary-nav {
     display: none !important;
   }
@@ -787,8 +787,6 @@ a.nav-link.nested-link:focus {
 
   .top-content {
     padding-top: 8em;
-    width: 100vw;
-    height: 100vh;
     background: url('../assets/brett-portfolio-home-hero-tablet.png') no-repeat;
     background-size: cover;
     background-position: center;
