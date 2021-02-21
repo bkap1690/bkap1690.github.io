@@ -7,7 +7,7 @@
   --primary-text: #111111;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
 }
 
@@ -21,6 +21,17 @@ html.wf-loading * {
 
 a {
   text-decoration: none !important;
+}
+
+.li-info {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+.li-title {
+  padding: 1.1rem 0 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 /* Additional Padding Styles */
@@ -60,7 +71,7 @@ h6,
 .display-3,
 .display-4 {
   padding: 10px 0;
-  font-family: "Nunito", sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 600;
 }
 
@@ -81,7 +92,7 @@ body {
 }
 
 p {
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   color: #2e2e2e;
   font-size: 1.375rem;
   line-height: 1.7rem;
@@ -128,11 +139,11 @@ p {
 
 #scroll-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 50px;
+  bottom: 2%;
+  right: 2%;
   padding: 10px 13px 10px 13px;
   border-radius: 50%;
-  z-index: 10001;
+  z-index: 3999;
   background-color: #fafafa;
   color: var(--primary-black);
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.14);
@@ -228,7 +239,7 @@ header {
 
 .test {
   height: 500px;
-  background: url("/Users/brettkaplan/brett-portfolio-site/assets/Brett Prof Cartoon .png");
+  background: url('/Users/brettkaplan/brett-portfolio-site/assets/Brett Prof Cartoon .png');
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -319,23 +330,29 @@ header {
 
 .card-gradient-blue {
   background: rgb(174, 225, 238);
-  background: radial-gradient(circle,
-      rgba(174, 225, 238, 1) 0%,
-      rgba(44, 162, 189, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(174, 225, 238, 1) 0%,
+    rgba(44, 162, 189, 1) 100%
+  );
 }
 
 .card-gradient-orange {
   background: rgb(255, 226, 181);
-  background: radial-gradient(circle,
-      rgba(255, 226, 181, 1) 0%,
-      rgba(237, 159, 18, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 226, 181, 1) 0%,
+    rgba(237, 159, 18, 1) 100%
+  );
 }
 
-.card-gradient-red {
-  background: rgb(255, 168, 168);
-  background: radial-gradient(circle,
-      rgba(255, 168, 168, 1) 0%,
-      rgba(237, 18, 18, 1) 100%);
+.card-gradient-yellow {
+  background: rgb(255, 241, 164);
+  background: radial-gradient(
+    circle,
+    rgb(255, 241, 164, 1) 0%,
+    rgb(252, 213, 0, 1) 100%
+  );
 }
 
 .card-image-h {
@@ -550,7 +567,7 @@ a.nav-link.nested-link:focus {
 
 .anchor:before {
   height: 75px;
-  content: "";
+  content: '';
   display: block;
 }
 
@@ -660,7 +677,7 @@ a.nav-link.nested-link:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  line-height: .77;
+  line-height: 0.77;
 }
 
 .not-top {
@@ -672,12 +689,12 @@ a.nav-link.nested-link:focus {
   height: 200px;
 }
 
-.method-list>h5 {
+.method-list > h5 {
   color: #eea423;
   font-weight: 800;
 }
 
-.method-list ul>li {
+.method-list ul > li {
   color: #868686 !important;
 }
 
@@ -731,11 +748,7 @@ a.nav-link.nested-link:focus {
   box-shadow: 0 2px 2px rgba(168, 88, 92, 0.2);
 }
 
-
-
 /*************************** MEDIA QUERIES ***************************/
-
-
 
 @media (min-width: 768px) and (max-width: 967.98px) {
   #secondary-nav {
@@ -780,7 +793,6 @@ a.nav-link.nested-link:focus {
 
   /* Home Image mobile styles */
 
-
   .rellax {
     transform: translate3d(0, 0, 0) !important;
   }
@@ -796,7 +808,6 @@ a.nav-link.nested-link:focus {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-
   #secondary-nav {
     display: none !important;
   }
@@ -834,11 +845,9 @@ a.nav-link.nested-link:focus {
   .card-round-sm {
     border-radius: 16px 16px 0px 0px;
   }
-
 }
 
 @media (max-width: 575.98px) {
-
   #secondary-nav {
     display: none !important;
   }
@@ -876,5 +885,4 @@ a.nav-link.nested-link:focus {
   .card-round-sm {
     border-radius: 16px 16px 0px 0px;
   }
-
 }

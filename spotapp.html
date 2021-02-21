@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://drive.google.com/uc?id=1jLrfISsLUcRiwgNl0koSfsS6lylj0E7h"
+    />
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>SPOT App Case Study</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#side">
+    <script>
+      document.body.className = 'js';
+    </script>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light nav-light fixed-top">
+        <a class="navbar-brand nav-logo pl-lg-5" href="index.html"
+          >Brett<span id="logo-dot">.</span>Kaplan</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav pt-2 pl-5">
+            <li class="nav-item dropdown">
+              <a
+                class="main-nav-link hvr-underline-from-center mx-3 px-0 dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Portfolio <span class="sr-only">(current)</span></a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="spotapp.html">SPOT App</a>
+                <a class="dropdown-item" href="sportsstream.html"
+                  >SportsStream</a
+                >
+                <a class="dropdown-item" href="citypups.html">CityPups</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="main-nav-link hvr-underline-from-center mx-3 px-0"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="main-nav-link hvr-underline-from-center mx-3 px-0"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <progress value="0" max="1">
+        <!-- Older browsers look to the old div style of progress bars -->
+        <!-- Newer browsers ignore this stuff but it allows older browsers to 
+              still have a progress bar. -->
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+    <div class="jumbotron-fluid pb-5 pt-6">
+      <h1 class="project-title text-center pt-4">SPOT App</h1>
+      <hr class="small-hr" />
+      <p class="project-subtitle text-center pt-3 pb-0">
+        App for gig workers to find work easily and earn cash quickly
+      </p>
+      <div class="text-center">
+        <img
+          class="w-50 h-50 img-zoomable"
+          src="assets/SPOTAPP_Design_Mock.png"
+          alt="SportsStream Hero Image"
+        />
+      </div>
+    </div>
+    <div class="position-relative" id="content">
+      <div class="row h-100 mt-5">
+        <nav class="hidden pl-4 side-nav" id="secondary-nav">
+          <div class="mt-5 mb-3 sticky-top sticky-offset" id="side">
+            <ul class="nav flex-md-column" id="sidenav">
+              <li class="nav-item">
+                <a href="#overview" class="nav-link active pl-0 side-nav-header"
+                  >Overview</a
+                >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link nested-link" href="#problem">Problem</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nested-link" href="#solution"
+                      >Solution</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nested-link" href="#methods"
+                      >Our Approach</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nested-link" href="#my-role"
+                      >My Contribution</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#research" class="nav-link pl-0 side-nav-header"
+                  >Research</a
+                >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link nested-link" href="#competitive-analysis"
+                      >Competitive Analysis</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nested-link" href="#journey-map"
+                      >Journey Map</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#design" class="nav-link pl-0 side-nav-header"
+                  >Design</a
+                >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#sketches" class="nav-link nested-link"
+                      >Sketches</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#wireframe" class="nav-link nested-link"
+                      >Wireframe</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#styleguide" class="nav-link nested-link"
+                      >Style Guide</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#prototype" class="nav-link pl-0 side-nav-header"
+                  >Prototype</a
+                >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#prototype-screens" class="nav-link nested-link"
+                      >Prototype Screens</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#evaluation" class="nav-link pl-0 side-nav-header"
+                  >Evaluation</a
+                >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#usability-testing" class="nav-link nested-link"
+                      >Usability Testing</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#results" class="nav-link nested-link">Results</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#next-steps" class="nav-link pl-0 side-nav-header"
+                  >Next Steps</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#take-aways" class="nav-link pl-0 side-nav-header"
+                  >Take-aways</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main class="container-fluid col-xs-12 py-2">
+          <!-- overview section begin -->
+          <div
+            class="container col-lg-7 col-md-9 px-md-3 col-sm-12"
+            id="overview"
+          >
+            <h2 class="mb-3 text-center">Overview</h2>
+            <hr class="small-hr" />
+            <div class="pt-3 pb-5 anchor" id="problem">
+              <h3>Problem</h3>
+              <p>
+                SPOT App, a freelance/gig-centric app, provides jobs to people
+                who have struggled to find work due to lack of professional
+                experience and skills. The difficulty for people in these
+                positions to find work has been exacerbated by the COVID-19
+                pandemic as demand for work has increased while the job market
+                has diminished dramtically.
+
+                <br />
+                <br />
+                They had been receiving feedback from workers who said they
+                didn't feel fully prepared for the jobs they were hired for and
+                employers who said that workers occasionally didn't know
+                protocol and areas of the job when initially brought on.
+              </p>
+            </div>
+
+            <!-- Solutions Single Row Begin -->
+            <div class="row align-items-start">
+              <div class="anchor col-lg-8" id="solution">
+                <h3>Solution</h3>
+                <p>
+                  SPOT App was interested in integrating a Learning Management
+                  System (LMS) that would allow employees to better prepare for
+                  the job they were hired for as well as learn on the job while
+                  they still continue to earn money. Employers would be able to
+                  track employees progress through the course to ensure the
+                  employee was learning the job properly.
+                </p>
+              </div>
+              <div class="anchor pl-lg-5 col-lg-4 col-md-4 flex-column py-5">
+                <h5>Role</h5>
+                <p>UX/UI Designer, Researcher, Information Architect</p>
+                <h5>Timeline</h5>
+                <p>Nov. 2020 - Dec. 2020</p>
+                <h5>Tools</h5>
+                <p>Figma, pen & paper</p>
+              </div>
+              <div
+                class="embed-responsive embed-responsive-16by9 text-center py-5"
+              >
+                <iframe
+                  style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                  width="800"
+                  height="450"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVOoqJ4PJ0zresMBwzQeVeF%2FSpot-App-Wireframe-Sketch%3Fnode-id%3D321%253A664%26scaling%3Dscale-down"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <!-- solutions single row end -->
+            <div class="anchor py-md-2" id="methods">
+              <h3 class="pb-md-3">Methods</h3>
+              <div class="row align-items-center justify-content-around">
+                <div class="method-list col-sm-12 col-md-4 text-md-left">
+                  <h5>Research</h5>
+                  <ul class="list-unstyled">
+                    <li>Competitive Analysis</li>
+                  </ul>
+                </div>
+                <div class="method-list col-sm-12 col-md-4 text-md-left">
+                  <h5>Design</h5>
+                  <ul class="list-unstyled">
+                    <li>Sketches</li>
+                    <li>Wireframes</li>
+                    <li>Prototype</li>
+                  </ul>
+                </div>
+                <div class="method-list col-sm-12 col-md-4 text-md-left">
+                  <h5>Evaluate</h5>
+                  <ul class="list-unstyled">
+                    <li>Usability Testing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="anchor pb-5" id="my-role">
+              <h3>Contributions</h3>
+              <p>
+                Working with another colleague, I conducted research via a
+                competitive analysis, delivered sketches, wireframes,
+                high-fidelity screens, and conducted several moderated usability
+                tests of the finished prototype.
+              </p>
+            </div>
+          </div>
+          <!-- overview section end -->
+          <br />
+
+          <!-- research section begin -->
+
+          <div class="pt-3 pb-5 anchor" id="research">
+            <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+              <h2 class="text-center">Research</h2>
+              <hr class="small-hr" />
+              <div class="anchor" id="competitive-analysis">
+                <h3>Competitive Analysis</h3>
+                <p>
+                  From initial discussion of goals with the SPOT App team, they
+                  wanted a competitive analysis done to determine how similar
+                  platforms were solving problems pertaining to gig workers and
+                  their ability to learn.
+                  <br />
+                  <br />
+                  We identified six competitors in total whose platforms focused
+                  on the following: a) connect gig workers with jobs, b) provide
+                  an LMS users can use as a training aparatus, and c) operates
+                  in the Canadian market. We used the Nielsen Norman Group's
+                  Usability Heuristics as a guiding criteria.
+                </p>
+                <dl class="pt-5">
+                  <div class="my-5 p-3 rounded">
+                    <h2 class="pb-3">
+                      <span class="p-1" style="background-color: #fcd500"
+                        >Hyr</span
+                      >
+                    </h2>
+                    <dd class="font-weight-bold">
+                      Hyr connects businesses and workers to fill any shift, at
+                      any time, at the best possible price.
+                    </dd>
+                    <ol>
+                      <li class="li-title">Aesthetic and Minimalist Design</li>
+                      <ul class="font-italic">
+                        <li>
+                          Onboarding Experience is simple. However, not enough
+                          contrast and blank space caused a distraction and
+                          readability issues.
+                        </li>
+                        <li>
+                          Profile photos. Not sure why users need many different
+                          photos here. Is that necessary?
+                        </li>
+                      </ul>
+                      <li class="li-title">Visibility of System Status</li>
+                      <ul class="font-italic">
+                        <li>
+                          The home tab is slightly overwhelming to the eye and
+                          uses phrases that aren't quite obvious to the user
+                          such as 50Upoints.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/hyr_home_screen.png"
+                              alt="Hyr Home Screen"
+                            />
+                          </div>
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow justify-content-center img-zoomable"
+                              src="assets/hyr_shift_screen.png"
+                              alt="Hyr Shift Screen"
+                            />
+                          </div>
+                        </div>
+                        <li>
+                          The 'Shift Summary' is a great way to provide
+                          essential details about the job and reviews.
+                        </li>
+                        <li>
+                          Shifts Status is another subtle but valuable feature
+                          that uses different colors to demonstrate the shift
+                          status. Grey - Unavailable, Yellow - Applied-to
+                          Shifts.
+                        </li>
+                      </ul>
+                    </ol>
+                  </div>
+                  <div class="my-5 p-3 rounded">
+                    <h2 class="pb-3">
+                      <span class="p-1" style="background-color: #fcd500"
+                        >Tasker by Taskrabbit</span
+                      >
+                    </h2>
+                    <dd class="li-info font-weight-bold">
+                      Tasker matches up gig workers with furniture assembly,
+                      moving, and other handyman services.
+                    </dd>
+                    <ol>
+                      <li class="li-title">Visibility of System Status</li>
+                      <ul class="font-italic">
+                        <li>
+                          The Skills List provides real-time feedback to user if
+                          “the skills are in low demand”, by doing this, taskers
+                          can add more skills to find a job fast.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/tasker_Skills List.png"
+                              alt="Tasker Skills List"
+                            />
+                          </div>
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/tasker_demand.png"
+                              alt="Tasker Demand"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                      <li class="li-title">User Control and Freedom</li>
+                      <ul class="font-italic">
+                        <li>
+                          Users can draw on a map to choose a work area that's
+                          suitable for them. This allows total control instead
+                          of just entering a zipcode.
+                        </li>
+                        <li>
+                          Users can sync their calendar to better manage their
+                          time, by simply tapping and dragging the blue bar to
+                          add time slots.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/tasker_map.png"
+                              alt="Tasker Map"
+                            />
+                          </div>
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/tasker_calendar.png"
+                              alt="Tasker Calendar"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                    </ol>
+                  </div>
+                  <div class="my-5 p-3 rounded">
+                    <h2 class="pb-3">
+                      <span class="p-1" style="background-color: #fcd500"
+                        >Freelancer</span
+                      >
+                    </h2>
+                    <dd class="font-weight-bold">
+                      Freelancer is the world's largest freelancing and
+                      crowdsourcing marketplace.
+                    </dd>
+                    <ol>
+                      <li class="li-title">Visibility of System Status</li>
+                      <ul class="font-italic">
+                        <li>
+                          Add skills to get recommendations. Once users add
+                          skills, the system will provide a list of recommended
+                          jobs.
+                        </li>
+                        <li>
+                          My jobs is broken into 2 sections with work in
+                          progress and past projects allowing users to digest
+                          the information more easily.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/freelancer_browse_jobs.png"
+                              alt="Freelancer Browse Jobs"
+                            />
+                          </div>
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/freelancer_myjobs.png"
+                              alt="Freelancer My Jobs"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                      <li class="li-title">Aesthetic and Minimalist Design</li>
+                      <ul class="font-italic">
+                        <li>
+                          Bullet point summary to help users get a quick view
+                          about the job, time, biding and pay.
+                        </li>
+                        <li>
+                          On the job page. Summarized job details, avg bid/total
+                          bids, skill requirements and employer rating.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/freelancer_jobs_search.png"
+                              alt="Freelancer Jobs Search"
+                            />
+                          </div>
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/freelancer_place_bid.png"
+                              alt="Freelancer Place Bid"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                    </ol>
+                  </div>
+                  <div class="my-5 p-3 rounded">
+                    <h2 class="pb-3">
+                      <span class="p-1" style="background-color: #fcd500"
+                        >Canvas LMS</span
+                      >
+                    </h2>
+                    <dd class="li-info font-weight-bold">
+                      Canvas LMS is a cloud-based learning management system
+                      (LMS) specifically designed for K-5 on up through higher
+                      education institutions.
+                    </dd>
+
+                    <ol>
+                      <li class="li-title">Aesthetic and minimalist design</li>
+                      <ul class="font-italic">
+                        <li>
+                          The website and app have a very clean minimal design
+                          that allows the user to digest information easily and
+                          not be overwhelmed.
+                        </li>
+                        <li>
+                          A dashboard and menu with essential items allows the
+                          user to access important information quickly.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/Canvas_dashboard_1.png"
+                              alt="Canvas Dashboard Main"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                      <li class="li-title">Aesthetic and Minimalist Design</li>
+                      <ul class="font-italic">
+                        <li>
+                          The navigation of Canvas contains relevant information
+                          that is essential to the user getting into their
+                          learning experience quickly.
+                        </li>
+                        <li>
+                          The user can access courses, materials, account
+                          information, calendar all within 2 clicks or less.
+                          There is a quick guided tour as well to introduce the
+                          user to Canvas’s UI.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/canvas_dashboard_2.png"
+                              alt="Canvas Dashboard Tour"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                    </ol>
+                  </div>
+                  <div class="my-5 p-3 rounded">
+                    <h2 class="pb-3">
+                      <span class="p-1" style="background-color: #fcd500"
+                        >Absorb LMS</span
+                      >
+                    </h2>
+                    <dd class="font-weight-bold">
+                      Absorb LMS is also a cloud-based learning management
+                      system that empowers companies around the world to
+                      effectively deliver training.
+                    </dd>
+                    <ol>
+                      <li class="li-title">
+                        Flexibility and Efficiency of Use
+                      </li>
+                      <ul class="font-italic">
+                        <li>
+                          The interface is big and bold making the dashboard
+                          easily legible. The dashboard also gives access to
+                          important features the user will be using more often.
+                        </li>
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/Absorb_dashboard_interface.png"
+                              alt="Canvas Dashboard Main"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                      <li class="li-title">User Control and Freedom</li>
+                      <ul class="font-italic">
+                        <li>
+                          There is no clear back button or navigation out of the
+                          current course a user is in. If they want to navigate
+                          back to a certain page, they must click the menu icon
+                          in the upper-right-hand corner.
+                        </li>
+
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/Absorb_resource_Center.png"
+                              alt="Canvas Dashboard Tour"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                      <li class="li-title">Recognition Rather Than Recall</li>
+                      <ul class="font-italic">
+                        <li>
+                          Absorb contains a resource section where users can
+                          access information pertaining to learning about the
+                          Absorb platform.
+                        </li>
+
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/Absorb_back_button.png"
+                              alt="Canvas Dashboard Tour"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                    </ol>
+                  </div>
+                  <div class="my-5 p-3 rounded">
+                    <h2 class="pb-3">
+                      <span class="p-1" style="background-color: #fcd500"
+                        >Wonolo</span
+                      >
+                    </h2>
+                    <dd class="li-info font-weight-bold">
+                      Wonolo connects people with immediate daily shifts and
+                      temp-to-perm opportunities around their location.
+                    </dd>
+                    <ol>
+                      <li class="li-title">Recognition Rather Than Recall</li>
+                      <ul class="font-italic">
+                        <li>
+                          Like Absorb LMS, Wonolo contains a resource center
+                          where a user can learn about the latest policies, earn
+                          badges, and more to enhance their Wonolo working
+                          experience.
+                        </li>
+                        <div class="row py-5 justify-content-center">
+                          <img
+                            class="img-fluid shadow img-zoomable"
+                            src="assets/Wonolo_resources.png"
+                            alt="Canvas Dashboard Main"
+                          />
+                        </div>
+                      </ul>
+                      <li class="li-title">Visibility of System Status</li>
+                      <ul class="font-italic">
+                        <li>
+                          Wonolo contains a step-by-step guide of how to
+                          “complete your profile” so-to-speak and have the user
+                          on their way to their first job. Along with the guide,
+                          is a status of where the user currently is and how
+                          many more steps the user needs to complete in order to
+                          complete their first job and get paid.
+                        </li>
+
+                        <div class="row py-5">
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/Wonolo_set_up_flow.png"
+                              alt="Canvas Dashboard Tour"
+                            />
+                          </div>
+
+                          <div class="col text-center">
+                            <img
+                              class="img-fluid shadow img-zoomable"
+                              src="assets/Wonolo_set_up_flow-2.png"
+                              alt="Canvas Dashboard Tour"
+                            />
+                          </div>
+                        </div>
+                      </ul>
+                    </ol>
+                  </div>
+                </dl>
+              </div>
+              <div class="anchor" id="journey-map">
+                <h3>Journey Map</h3>
+                <p>
+                  The SPOT App team provided us with a journey map that follows
+                  a user, Daniel Abajian, a recent immigrant to Canada who has
+                  been looking for jobs as an Engineer. He hasn't had luck and
+                  with bills piling up, he signs up for SPOT and applies to a
+                  warehouse position. Unfortunately, he has to take a Health &
+                  Safety course in the SPOT App LMS in order to apply.
+                </p>
+                <p>
+                  The journey map shows how Daniel progresses through his
+                  decision making process along with his thoughts, feelings, and
+                  actions. In addition, there are suggested ideas and
+                  opportunities where the user can interact with the LMS and the
+                  screens that correspond to those ideas at each phase of
+                  Daniel's journey such as Job Search, LMS Course List, and
+                  actual course page.
+                </p>
+                <div class="py-5 text-center">
+                  <img
+                    class="w-100 shadow img-zoomable"
+                    src="assets/spot_app_job_journey.png"
+                    alt="SPOT App Customer Journey Map"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- research section end -->
+          <br />
+
+          <!-- design section begin -->
+          <div class="pt-3 pb-5 anchor" id="design">
+            <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+              <h2 class="mb-3 text-center">Design</h2>
+              <hr class="small-hr" />
+
+              <!-- skteches section begin -->
+              <div class="anchor" id="sketches">
+                <h3>Sketches</h3>
+                <p class="py-5">
+                  The SPOT App team asked us to focus on designing screens that
+                  addressed the following tasks:
+                </p>
+                <ul>
+                  <li>Searching for a job</li>
+                  <li>LMS Course List</li>
+                  <li>
+                    An example of what it looks like while taking the course for
+                    a job
+                  </li>
+                  <li>Course confirmation screen</li>
+                  <li>
+                    Confirmed Jobs Screen with possible checklist of things
+                    completed
+                  </li>
+                </ul>
+                <p class="py-2">
+                  We sketched out the intial screens above as well a included a
+                  couple of draft wireframes to get a further idea of direction
+                  we wanted to go with the wireframes.
+                </p>
+                <p class="py-2">
+                  Since the main functionalities of the LMS pertained to users
+                  learning information, we felt it was a good idea to include a
+                  design for quizzing users so they can learn the information
+                  quickly.
+                </p>
+
+                <div class="py-5">
+                  <figure class="figure justify-content-center">
+                    <img
+                      class="img-fluid shadow img-zoomable"
+                      src="assets/julie_sketch_2.png"
+                      alt="SPOT App Customer Journey Map"
+                    />
+                    <figcaption class="figure-caption py-5 text-center">
+                      Sketches of a user within a course including a quiz
+                      screen, a lessons list screen, and a course confirmation
+                      screen.
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 py-5">
+                    <figure class="figure">
+                      <img
+                        class="img-fluid shadow img-zoomable"
+                        src="assets/julie_sketch_1.png"
+                        alt="SPOT App Customer Journey Map"
+                      />
+                    </figure>
+                  </div>
+
+                  <div class="col-sm-6 py-5">
+                    <figure class="figure">
+                      <img
+                        class="img-fluid shadow img-zoomable"
+                        src="assets/julie_sketch_3.png"
+                        alt="SPOT App Customer Journey Map"
+                      />
+                    </figure>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <figure class="figure">
+                    <img
+                      class="img-fluid shadow img-zoomable"
+                      src="assets/julie_sketch_4.png"
+                      alt="SPOT App Customer Journey Map"
+                    />
+                    <figcaption class="figure-caption py-5 text-center">
+                      In the initial sketches of course details, and the
+                      cirriculum, we included features like course length and
+                      the user's progress within the course.
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 py-5">
+                    <figure class="figure text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/spot_course_search_screen.png"
+                        alt="SPOT App Course Search Wire Draft"
+                      />
+                    </figure>
+                  </div>
+
+                  <div class="col-sm-6 py-5">
+                    <figure class="figure text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/spot_job_search_screen.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </figure>
+                  </div>
+                  <figcaption class="figure-caption py-3 px-5 text-center">
+                    In the initial sketches of course details, and the
+                    cirriculum, we included features like course length and the
+                    user's progress within the course.
+                  </figcaption>
+                </div>
+
+                <!-- skteches section ends -->
+
+                <!-- wireframe section begin -->
+                <div class="anchor" id="wireframe">
+                  <h3>Wireframes</h3>
+                  <p class="py-2">
+                    As we developed our wireframes, we re-evaluated our sketches
+                    and referenced our competitive analysis to ensure we were
+                    designing the best experience for the user. For example,
+                    instead of including a payment option in the menu bar, we
+                    felt it would be better to keep that within the user profile
+                    tab along with other user-related settings.
+                  </p>
+                  <p class="py-2">
+                    We continued designing our wireframes and reiterating on the
+                    LMS elements such as searching for a course, taking a
+                    course, and including a learning dashboard for users to see
+                    their overall performance. We took elements of design from
+                    the companies we analyzed such as the browsing layout of
+                    Freelancer. We used a card layout in the browsing layout of
+                    both searching for courses and jobs as we felt this helped
+                    users digest information easily.
+                  </p>
+                  <p class="py-2">
+                    Since the SPOT App team stressed the importance of gig
+                    workers and employers needing to feel more prepared before
+                    they took on a job, we included a checklist of tasks for
+                    users to do to up to the day they arrive. This included
+                    things like bringing documentation such as IDs and forms,
+                    watching training videos, arriving on time with the address
+                    in hand, tracking hours worked, and pay.
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Complete_Course_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Course_Center_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Course_Detail_Page_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Quiz-1_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Direct_to_course_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Job_Detail_Page_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Job_Search_Screen_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Learn_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_My_Jobs_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Quiz_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Search_for_Jobs_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                    <div class="col-sm-6 col-lg-3 py-5 text-center">
+                      <img
+                        class="img-fluid w-75 shadow img-zoomable"
+                        src="assets/SPOT_Task_List_Wire.png"
+                        alt="SPOT App Job Search Wire Draft"
+                      />
+                    </div>
+                    <!-- /.col-sm-3 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- wireframe section ends -->
+
+                <!-- styleguide section begin -->
+                <div class="anchor" id="styleguide">
+                  <h3>Style Guide</h3>
+                  <p class="py-5">
+                    SPOT App provided the style guide for us to use when
+                    designing our high fidelity mock ups. They used two fonts,
+                    Montserrat for body text and captions and Comfortaa for
+                    headings and subheadings.
+                  </p>
+                  <p class="py-2">
+                    The colors they used were an off-black (#252525) as their
+                    primary brand color, off-white (#F5F5F5) as their secondary
+                    color, and their SPOT App yellow (#FED500) as accent colors.
+                  </p>
+                  <div class="py-5">
+                    <figure class="figure text-center">
+                      <img
+                        class="img-fluid shadow img-zoomable"
+                        src="assets/SPOT_Style_Guide_OG.png"
+                        alt="SPOT App Style Guide"
+                      />
+                      <figcaption class="figure-caption py-5 text-center">
+                        SPOT App Style Guide.
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="py-5">
+                    <figure class="figure text-center">
+                      <img
+                        class="img-fluid shadow img-zoomable"
+                        src="assets/SPOT_Design_Typography_OG.png"
+                        alt="SPOT App Customer Journey Map"
+                      />
+                      <figcaption class="figure-caption py-5 text-center">
+                        SPOT App Typography Guide.
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="py-5">
+                    <p class="pb-5">
+                      For their buttons, they use Montserrat and use their SPOT
+                      App yellow as the background for the primary button.
+                    </p>
+                    <figure class="figure text-center">
+                      <img
+                        class="img-fluid w-50 shadow img-zoomable"
+                        src="assets/SPOT_Design_Buttons_OG.png"
+                        alt="SPOT App Customer Journey Map"
+                      />
+                      <figcaption class="figure-caption py-5 text-center">
+                        SPOT App Button Designs.
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <!-- styleguide section ends -->
+              </div>
+            </div>
+          </div>
+          <!-- design section end -->
+          <br />
+
+          <!-- prototype section begin -->
+          <div class="anchor" id="prototype">
+            <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+              <h2 class="mb-3 text-center">Prototype</h2>
+              <hr class="small-hr" />
+              <p>
+                Using the SPOT App style guide along with our recommended
+                changes, we created high-fidelity screens of the LMS experience
+                and searching for a job experience. The initial SPOT App design
+                did not have some functionalities such as a menu bar, that we
+                felt would be useful additions to the app. Having suggested that
+                to the SPOT Lead Designer, they felt it was the right approach
+              </p>
+
+              <div
+                class="w-xl-100 w-lg-100 w-md-100 w-sm-100 mx-auto py-5 anchor"
+                id="prototype-screens"
+              >
+                <h3 class="mb-3">Prototype Screens</h3>
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Home.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Search_for_Jobs_A.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Job_Detail_A.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Direct_to_Course.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Course_Detail.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Curriculum_Detail_Page2.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Quiz.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Quiz_Progress_Saved.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Quiz_Finished.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Compeleted_Course.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_My_Jobs.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Job_Confirmation_Task_List.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_LearnB.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                  <div class="col-sm-6 col-lg-3 py-5 text-center">
+                    <img
+                      class="img-fluid w-75 shadow img-zoomable"
+                      src="assets/SPOT_Course_Detail_Progressed.png"
+                      alt="SPOT App Job Search Wire Draft"
+                    />
+                  </div>
+                  <!-- /.col-sm-3 -->
+                </div>
+                <!-- /.row -->
+                <div class="py-5">
+                  <figure class="figure justify-content-center">
+                    <img
+                      class="img-fluid shadow img-zoomable"
+                      src="assets/SPOT_All_Screens.png"
+                      alt="SPOT App Customer Journey Map"
+                    />
+                    <figcaption class="figure-caption py-5 text-center">
+                      Longform high-fidelity screens.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- prototype section end -->
+
+          <!-- evaluation section begin -->
+          <div class="pt-3 pb-5 anchor" id="evaluation">
+            <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+              <h2 class="mb-3 text-center">Evaluation</h2>
+              <hr class="small-hr" />
+
+              <!-- usability testing section begin -->
+              <div class="anchor" id="usability-testing">
+                <h3>Usability Testing</h3>
+                <p>
+                  We conducted 4 moderate usability tests and 1 unmoderated
+                  usability test with 5 participants from a personal network.
+                </p>
+                <div class="pl-4">
+                  <div class="py-3">
+                    <h4>Objective</h4>
+                    <p>
+                      To help understand the kinds of problems users might run
+                      into when interacting with our product, as well as how
+                      satisfied users will be with the product.
+                    </p>
+                  </div>
+                  <div class="py-3">
+                    <h4>Participants</h4>
+                    <ol class="font-italic">
+                      <li>Emily P., 30yrs old, Female, Freelance Designer</li>
+                      <li>Brian H., 36yrs old, Male, Unemployed</li>
+                      <li>Andrew, 35yrs old, Male, Sales</li>
+                      <li>Tess L., 30 yrs old, Female, TV Writer</li>
+                      <li>Maxx K., 32 yrs old, Male, Retail Worker</li>
+                    </ol>
+                  </div>
+                  <div class="py-3">
+                    <h4>Test Questions/Tasks</h4>
+                    <p>
+                      Some key questions we asked during the usability test to
+                      uncover potential usability problems, were:
+                    </p>
+                    <ul class="font-italic">
+                      <li class="py-2">What is your initial impression?</li>
+                      <li class="py-2">What does the label mean to you?</li>
+                      <li class="py-2">
+                        Can you find the information you want?
+                      </li>
+                      <li class="py-2">
+                        Are there any other things you would expect?
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="py-3">
+                    <h4>Scenarios</h4>
+                    <p></p>
+                    <ul class="font-italic">
+                      <li class="py-2">
+                        You just downloaded the SPOT app and want to find a job
+                        quickly. Go into the app and find a job you’re
+                        interested in and learn more about it.
+                      </li>
+                      <li class="py-2">
+                        You see some of the job requirements and realize you
+                        don’t have all of the necessary courses taken. Complete
+                        a course so that you can apply to the job.
+                      </li>
+                      <li class="py-2">
+                        Since you need some additional requirements before
+                        applying to the job, go ahead and save that job for
+                        later so you can access it without searching for it.
+                      </li>
+                      <li class="py-2">
+                        Complete the course requirement and come back to the job
+                        application page and apply to the job.
+                      </li>
+                      <li class="py-2">
+                        You’ve applied to the job but you want more access to
+                        other jobs so you can get a higher pay grade along with
+                        more opportunities. Browse some courses to complete
+                        while you wait for a response to your previous
+                        application.
+                      </li>
+                      <li class="py-2">
+                        You were just accepted to the position that you applied
+                        for. Make sure to view your checklist in preparation for
+                        the new job.
+                      </li>
+                    </ul>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+              <!-- usability testing section ends -->
+
+              <!-- results section begin -->
+              <div class="anchor" id="results">
+                <h3>Results</h3>
+                <p>
+                  We recorded our findings from the usability testing and
+                  categorized them based on the impact and priority to the user
+                  as follows:
+                </p>
+
+                <ul>
+                  <li>
+                    <span class="font-weight-bold">CRITICAL</span>: Multiple
+                    users could not complete a task. These issues are issues you
+                    must fix before you launch your app or site
+                  </li>
+                  <li>
+                    <span class="font-weight-bold">MAJOR</span>: Multiple users
+                    struggled to complete a task. These issues are important to
+                    fix before you launch your app or site
+                  </li>
+                  <li>
+                    <span class="font-weight-bold">MINOR</span>: Users completed
+                    a task but raised concerns about design choices. You should
+                    fix these issues when time allows
+                  </li>
+                  <li>
+                    <span class="font-weight-bold">NORMAL</span>: Users
+                    identified a cosmetic problem. You should fix these issues
+                    when time allows
+                  </li>
+                </ul>
+
+                <div class="table-responsive py-5">
+                  <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Issue</th>
+                        <th scope="col">Focus Area</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Recommendation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-danger">
+                        <th scope="row">Major</th>
+                        <td>Issue</td>
+                        <td>Cert Confirmation / Apply to job</td>
+                        <td>
+                          User is taken to job search page instead of apply to
+                          specific job page from cert confirmation page
+                        </td>
+                        <td>
+                          User should be taken to the specific job application
+                          page when clicking apply on cert confirmation page
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Minor</th>
+                        <td>Issue</td>
+                        <td>Required courses for job</td>
+                        <td>
+                          User didn’t quite know where to look in order to take
+                          a required course.
+                        </td>
+                        <td>
+                          Include a link to required courses in job specific
+                          page and also break out certifications and actual job
+                          skills for a cleaner presentation
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Minor</th>
+                        <td>Quote</td>
+                        <td>Courses page/My learning summary</td>
+                        <td>
+                          Is a certificate different than a course? Courses
+                          completed vs certificates??
+                        </td>
+                        <td>
+                          Include a info icon next to each learning section that
+                          users can hover over to learn more about the
+                          particular section. Ie; “Courses Completed”
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Minor</th>
+                        <td>Efforts</td>
+                        <td>Home</td>
+                        <td>
+                          <ol>
+                            <li>
+                              Performance. How do you measure reliability?
+                            </li>
+                            <li>
+                              Learning. User questioned about the learning
+                              section whether it is for me or also my employer
+                              can see how many certificates I completed?
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <ol>
+                            <li>
+                              Performance. How do you measure reliability?
+                            </li>
+                            <li>
+                              On the performance section, add badges to
+                              incentify users
+                            </li>
+                          </ol>
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Minor</th>
+                        <td>Comprehension</td>
+                        <td>Multiple areas</td>
+                        <td>
+                          Users asked the meaning of Disbursed, gig jobs,
+                          acceptance rate vs hiring rate?
+                        </td>
+                        <td>
+                          Choose user friendly words to help the user understand
+                          the meaning. For example, Hiring rate is more user
+                          friendly compared to acceptance rate.
+                        </td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Minor</th>
+                        <td>Quote</td>
+                        <td>Curriculum</td>
+                        <td>
+                          “I wish there is more information about the multiple
+                          industry”
+                        </td>
+                        <td>
+                          Create a clickable popup page to learn more about the
+                          outcomes.
+                        </td>
+                      </tr>
+                      <tr class="table-success">
+                        <th scope="row">Normal</th>
+                        <td>Ideas</td>
+                        <td>My jobs/Job preparation</td>
+                        <td>
+                          Love the map, but also adding a calendar would be
+                          great here.
+                        </td>
+                        <td>
+                          Syncing with the user's calendar will be very helpful.
+                          1) easy to manage schedules; 2) Job recommendation
+                          based on the available time slots;
+                        </td>
+                      </tr>
+                      <tr class="table-success">
+                        <th scope="row">Normal</th>
+                        <td>Issue</td>
+                        <td>Courses checklist</td>
+                        <td>
+                          User clicked on check marks when prompted to complete
+                          course
+                        </td>
+                        <td>
+                          Use a percentage-based circle that shows the user how
+                          much of the course they have completed
+                        </td>
+                      </tr>
+                      <tr class="table-success">
+                        <th scope="row">Normal</th>
+                        <td>Ideas</td>
+                        <td>Search for Job/filter</td>
+                        <td>
+                          I would expect the filter function based on distance,
+                          company, hour rate, job categories
+                        </td>
+                        <td>
+                          Consider add distance, company, hour rate, job
+                          categories under the filter
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- results section ends -->
+
+          <!-- next steps section begin -->
+          <div class="pt-3 pb-5 anchor" id="next-steps">
+            <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+              <h2 class="mb-3 text-center">Next Steps</h2>
+              <hr class="small-hr" />
+              <p>
+                After sending our usability test results to the SPOT App team,
+                they were beyond pleased with our assessment and
+                recommendations. The SPOT team said they will be moving forward
+                with a good portion of our designs in their next and subsequent
+                builds of the app.
+              </p>
+              <p>
+                They specifically said the layout of the app is something
+                they're focusing on in the immediate build and that our menu bar
+                layout was exactly what they were looking for in a design.
+              </p>
+            </div>
+          </div>
+          <!-- next steps section ends -->
+          <!-- next steps section end -->
+          <br />
+
+          <!-- take aways section begin -->
+          <div class="pt-3 pb-3 anchor" id="take-aways">
+            <div class="pl-4 container col-md-7 col-sm-12 mx-auto">
+              <h2 class="mb-3 text-center">Take-Aways</h2>
+              <hr class="small-hr" />
+              <p>
+                Working with SPOT App and their team along with my colleague was
+                an amazing experience. The SPOT team was flexible in working
+                with suggestions we had and they were communicative about their
+                goals throughout the entire design process.
+              </p>
+              <p>
+                Being able to design an LMS for a job app was very rewarding
+                especially during a pandemic when people are in dire need of
+                employment.
+              </p>
+              <p>
+                I enjoyed working with my colleague as well. We both
+                communicated our ideas thoughtfully, and were able to compromise
+                easily on thinking that contrasted from each other.
+              </p>
+            </div>
+          </div>
+          <!-- take aways section end -->
+          <br />
+        </main>
+      </div>
+    </div>
+    <a class="hidden" href="" id="scroll-to-top"
+      ><i class="fa fa-chevron-up" aria-hidden="true"></i
+    ></a>
+    <!-- Footer -->
+    <footer class="page-footer pt-md-5 mt-md-5 pt-sm-2 mt-sm-2">
+      <!-- Footer Elements -->
+      <div class="container text-center">
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 pt-5 pb-2">
+            <div class="flex-center">
+              <!-- Facebook -->
+              <a
+                class="sl-ic"
+                href="https://www.facebook.com/brett.kaplan.79/"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
+              </a>
+              <!--Linkedin -->
+              <a
+                class="sl-ic"
+                href="https://www.linkedin.com/in/brettkkaplan/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3">
+                </i>
+              </a>
+              <!--Dribbble -->
+              <a
+                class="sl-ic"
+                href="mailto:hello@brettkaplan.design"
+                target="_blank"
+              >
+                <i class="fab far fa-envelope fa-lg white-text mr-md-4 mr-3">
+                </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://brettkaplan.design/">brettkaplan.design</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <section class="test2"></section>
+    <script src="node_modules/zooming/build/zooming.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+  </body>
+</html>
