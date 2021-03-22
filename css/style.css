@@ -7,6 +7,10 @@
   --primary-text: #111111;
 }
 
+body {
+  background: #fafafa;
+}
+
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
@@ -77,11 +81,6 @@ h6,
 
 .js .hidden {
   display: none;
-}
-
-body {
-  /* padding-top: 50px; */
-  background-color: #fafafa;
 }
 
 html,
@@ -264,12 +263,6 @@ header {
   clear: both;
 }
 
-/* .thumbnail-grid:after,
-.imgbox:before {
-  content: '';
-  display: table;
-} */
-
 .thumbnail-grid li {
   margin: 15px;
 }
@@ -444,6 +437,7 @@ header {
   text-transform: capitalize;
 }
 
+
 .sl-ic {
   text-decoration: none;
   color: #999;
@@ -550,16 +544,6 @@ a.nav-link.nested-link:focus {
   font-weight: 600 !important;
 }
 
-/* hide all (inactive) nested list */
-/* .side-nav .nav ul.nav {
-  display: none;
-} */
-
-/* show active nested list */
-/* .side-nav .nav>.active>ul.nav {
-  display: block;
-} */
-
 .sticky-offset {
   border-left: 1px solid rgba(218, 218, 218, 0.23);
   padding-left: 1.3rem !important;
@@ -577,7 +561,6 @@ a.nav-link.nested-link:focus {
   position: fixed;
   top: 70px;
   right: 0;
-  /* border-left: rgb(216, 216, 216) 1px solid; */
   z-index: 1000 !important;
 }
 
@@ -601,13 +584,6 @@ a.nav-link.nested-link:focus {
 .img-caption {
   color: #aaaaaa;
 }
-
-/* .ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
-  z-index: 1 !important;
-} */
 
 .top-content {
   padding-top: 12em;
@@ -637,25 +613,10 @@ a.nav-link.nested-link:focus {
   z-index: 10;
   width: 30rem;
   height: auto;
-  /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); */
   border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
-
-/* .headline:before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  filter: blur(10px);
-  margin: -20px;
-} */
 
 .scroll-pad {
   padding-top: 3em;
@@ -788,7 +749,7 @@ a.nav-link.nested-link:focus {
   }
 
   .heading {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   /* Home Image mobile styles */

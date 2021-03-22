@@ -13,7 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link id="theme" rel="stylesheet" type="text/css" href="css/style.css" />
+    <link id="dark-theme-style" rel="stylesheet" />
     <link rel="stylesheet" href="css/hover-min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Brett Kaplan</title>
@@ -28,6 +29,38 @@
         <a class="navbar-brand nav-logo pl-lg-5" href="index.html"
           >Brett<span id="logo-dot">.</span>Kaplan</a
         >
+        <ul class="nav navbar-nav d-inline-block ml-auto px-3 d-lg-none">
+          <!-- Facebook -->
+          <li class="nav-item list-inline-item">
+            <a
+              class="sl-ic"
+              href="https://www.facebook.com/brett.kaplan.79/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+          </li>
+          <!--Linkedin -->
+          <li class="nav-item list-inline-item">
+            <a
+              class="sl-ic"
+              href="https://www.linkedin.com/in/brettkkaplan/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+          </li>
+          <!--Dribbble -->
+          <li class="nav-item list-inline-item">
+            <a
+              class="sl-ic"
+              href="mailto:hello@brettkaplan.design"
+              target="_blank"
+            >
+              <i class="fab far fa-envelope fa-lg white-text mr-md-4 mr-3"> </i>
+            </a>
+          </li>
+        </ul>
         <button
           class="navbar-toggler"
           type="button"
@@ -78,6 +111,50 @@
               >
             </li>
           </ul>
+          <!-- <ul class="nav navbar-nav ml-auto d-none d-lg-flex">
+            <li class="nav-item">
+              <a
+                href="javascript:void()"
+                class="btn btn-outline-info font-weight-bold"
+                id="theme-toggler"
+                onclick="toggleTheme()"
+              ></a>
+            </li>
+          </ul> -->
+          <ul class="nav navbar-nav ml-auto px-5 d-none d-lg-flex">
+            <!-- Facebook -->
+            <li class="nav-item">
+              <a
+                class="sl-ic"
+                href="https://www.facebook.com/brett.kaplan.79/"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
+              </a>
+            </li>
+            <!--Linkedin -->
+            <li class="nav-item">
+              <a
+                class="sl-ic"
+                href="https://www.linkedin.com/in/brettkkaplan/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3">
+                </i>
+              </a>
+            </li>
+            <!--Dribbble -->
+            <li class="nav-item">
+              <a
+                class="sl-ic"
+                href="mailto:hello@brettkaplan.design"
+                target="_blank"
+              >
+                <i class="fab far fa-envelope fa-lg white-text mr-md-4 mr-3">
+                </i>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -87,6 +164,7 @@
         <div class="py-md-3 headline col-lg-8 col-md-12">
           <h1 class="text-center">
             Hi! I'm Brett Kaplan. I’m a UX Designer who loves creating
+            experiences that are
           </h1>
           <h1 class="typing heading text-center py-md-5">
             <span
@@ -95,47 +173,12 @@
               data-rotate='[ "enjoyable", "immersive", "people-focused" ]'
             ></span>
           </h1>
-          <h1 class="text-center">experiences.</h1>
         </div>
-        <!-- <div class="floating-images col-lg-4 col-md-12">
-        <ul class="floating-images__container">
-
-          <li class="floating-image">
-            <div class="image img-container">
-              <img src="dist/img/hero-images/x06-news_app_concept.png.pagespeed.ic.EnncIiBDpJ.webp" alt="">
-            </div>
-          </li>
-          <li class="floating-image">
-            <div class="image img-container">
-              <img src="dist/img/hero-images/x07-newsletter_landing_page.png.pagespeed.ic.LBzXV0xePM.webp" alt="">
-            </div>
-          </li>
-          <li class="floating-image">
-            <div class="image img-container">
-              <img src="dist/img/hero-images/x08-landing-page-template.png.pagespeed.ic.x9f71mSB3h.webp" alt="">
-            </div>
-          </li>
-          <li class="floating-image">
-            <div class="image img-container">
-              <img src="dist/img/hero-images/x09-hero_idea__2.png.pagespeed.ic.W4DFxZuD9m.webp" alt="">
-            </div>
-          </li>
-          <li class="floating-image">
-            <div class="image img-container">
-              <img src="assets/CityPupsMocks_thumbnail.png" alt="">
-            </div>
-          </li>
-          <li class="floating-image">
-            <div class="image img-container">
-              <img src="dist/img/hero-images/x11-looper_wallpapers.png.pagespeed.ic.aa73FLs4iI.webp" alt="">
-            </div>
-          </li>
-        </ul>
-      </div> -->
       </div>
       <div class="scroll d-flex justify-content-center mt-3 pt-2">
-        <a href="#section1">Scroll</a>
+        <a href="#projects">Scroll</a>
       </div>
+
       <div id="section04" class="d-flex mt-1 justify-content-center">
         <a href="#projects"></a>
       </div>
@@ -254,113 +297,7 @@
             </div>
           </div>
         </a>
-        <!-- <a href="./sportsstream.html">
-        <div class="my-5 py-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-
-          <div class="row card-project-big justify-content-between align-items-center">
-            <div class="col-md-6 card-round-lg card-round-sm card-gradient-red">
-              <img width=" 100%" src="" aria-label="Image" role="img">
-
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This
-                  content is a little longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a> -->
       </div>
-
-      <!--------------- Grid Project List Style -- To Be Used At A Later Date ----------------->
-
-      <!-- <ul class="thumbnail-grid">
-
-        <a href="./sportsstream.html">
-          <li data-aos="fade-up" data-aos-duration="600" class="thumbnail-grid-item aos-init aos-animate">
-            <div class="card-project"
-              style="background-image: url('assets/sportsstream_app_case_study_hero.png'); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-bottom">
-                <h4 class="card-title">
-                  SportsStream App
-                </h4>
-                <h5 class="card-subtitle">
-                  UX/UI Design, Research, AI
-                </h5>
-                <p class="card-content">
-                  Stream your favorite sports.
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-
-
-        <a href="./citypups.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"
-            class="thumbnail-grid-item aos-init aos-animate">
-            <div class="card-project"
-              style="background-image: url('assets/CityPupsMocks.png'); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-bottom">
-                <h4 class="card-title">
-                  CityPups Website
-                </h4>
-                <h5 class="card-subtitle">
-                  UX/UI Design, Interaction Design
-                </h5>
-                <p class="card-content">
-                  Helping city-goers find dogs.
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-        <br>
-        <br>
-        <br>
-        <a href="./works/mirror-mirror.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="-50"
-            class="thumbnail-grid-item aos-init aos-animate">
-            <div class="card-project"
-              style="background-image: url('assets/CityPupsMocks.png'); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-bottom">
-                <h4 class="card-title">
-                  Relayto Platform
-                </h4>
-                <h5 class="card-subtitle">
-                  UX Design, UX Research, AI
-                </h5>
-                <p class="card-content">
-                  Easily transform your static PDFs into web-based presentations
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-
-        <a href="./works/THD.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"
-            class="thumbnail-grid-item aos-init aos-animate">
-            <div class="card-project"
-              style="background-image: url('assets/CityPupsMocks.png'); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-bottom">
-                <h4 class="card-title">
-                  My Home Depot Internship
-                </h4>
-                <h5 class="card-subtitle">
-                  UX/UI Design, UX Research, Internship
-                </h5>
-                <p class="card-content">
-                  What I learned and what I could have done during my Home Depot internship.
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-      </ul> -->
     </section>
     <a class="hidden" href="" id="scroll-to-top"
       ><i class="fa fa-chevron-up" aria-hidden="true"></i
@@ -372,36 +309,32 @@
         <!-- Grid row-->
         <div class="row">
           <!-- Grid column -->
-          <div class="col-md-12 pt-5 pb-2">
-            <div class="flex-center">
-              <!-- Facebook -->
-              <a
-                class="sl-ic"
-                href="https://www.facebook.com/brett.kaplan.79/"
-                target="_blank"
-              >
-                <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
-              </a>
-              <!--Linkedin -->
-              <a
-                class="sl-ic"
-                href="https://www.linkedin.com/in/brettkkaplan/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3">
-                </i>
-              </a>
-              <!--Dribbble -->
-              <a
-                class="sl-ic"
-                href="mailto:hello@brettkaplan.design"
-                target="_blank"
-              >
-                <i class="fab far fa-envelope fa-lg white-text mr-md-4 mr-3">
-                </i>
-              </a>
-            </div>
-          </div>
+
+          <!-- Facebook -->
+          <a
+            class="sl-ic"
+            href="https://www.facebook.com/brett.kaplan.79/"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-4 mr-3"> </i>
+          </a>
+          <!--Linkedin -->
+          <a
+            class="sl-ic"
+            href="https://www.linkedin.com/in/brettkkaplan/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-4 mr-3"> </i>
+          </a>
+          <!--Dribbble -->
+          <a
+            class="sl-ic"
+            href="mailto:hello@brettkaplan.design"
+            target="_blank"
+          >
+            <i class="fab far fa-envelope fa-lg white-text mr-md-4 mr-3"> </i>
+          </a>
+
           <!-- Grid column -->
         </div>
         <!-- Grid row-->
@@ -409,7 +342,10 @@
       <!-- Footer Elements -->
 
       <!-- Copyright -->
-      <div class="font-weight-bold text-center py-4" style="font-size: 1.2rem">
+      <div class="text-center py-4" style="font-size: 1rem">
+        Designed & coded by Brett Kaplan
+      </div>
+      <div class="font-weight-bold text-center py-2" style="font-size: 1rem">
         Email me at
         <a href="mailto:hello@brettkaplan.design">hello@brettkaplan.design</a>
       </div>
@@ -420,7 +356,6 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-    <section class="test2"></section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
