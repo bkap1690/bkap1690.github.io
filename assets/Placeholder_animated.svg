@@ -1,0 +1,5 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
+<path d="M1 1L127 127" stroke="black" class="hgvhfonr_0"></path>
+<path d="M127 1L1 127" stroke="black" class="hgvhfonr_1"></path>
+<path width="127" height="127" stroke="black" d="M0.5 0.5 L127.5 0.5 L127.5 127.5 L0.5 127.5 Z" class="hgvhfonr_2"></path>
+<style data-made-with="vivus-instant">.hgvhfonr_0{stroke-dasharray:179 181;stroke-dashoffset:180;animation:hgvhfonr_draw 2000ms linear 0ms forwards;}.hgvhfonr_1{stroke-dasharray:179 181;stroke-dashoffset:180;animation:hgvhfonr_draw 2000ms linear 0ms forwards;}.hgvhfonr_2{stroke-dasharray:508 510;stroke-dashoffset:509;animation:hgvhfonr_draw 2000ms linear 0ms forwards;}@keyframes hgvhfonr_draw{100%{stroke-dashoffset:0;}}@keyframes hgvhfonr_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
