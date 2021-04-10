@@ -91,7 +91,7 @@ window.onload = function () {
 
 $(function () {
   $(window).scroll(function (e) {
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 100) {
       $('#secondary-nav').fadeIn('slow');
     } else {
       $('#secondary-nav').fadeOut('fast');
