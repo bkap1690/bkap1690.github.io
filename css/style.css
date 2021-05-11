@@ -317,13 +317,9 @@ header {
   );
 }
 
-.card-gradient-orange {
-  background: rgb(255, 226, 181);
-  background: radial-gradient(
-    circle,
-    rgba(255, 226, 181, 1) 0%,
-    rgba(237, 159, 18, 1) 100%
-  );
+.card-gradient-purple {
+  background: #bda7ea;
+  background: radial-gradient(circle, #bda7ea 0%, #5962c9 100%);
 }
 
 .card-gradient-yellow {
