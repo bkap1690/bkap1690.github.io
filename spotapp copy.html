@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" color-mode="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,15 +23,6 @@
     <link rel="stylesheet" href="css/hover-min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>SPOT App Case Study</title>
-    <script>
-      if (
-        localStorage.getItem('color-mode') === 'dark' ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches &&
-          !localStorage.getItem('color-mode'))
-      ) {
-        document.documentElement.setAttribute('color-mode', 'dark');
-      }
-    </script>
   </head>
 
   <body data-spy="scroll" data-target="#side">
@@ -91,13 +82,7 @@
           <ul class="navbar-nav pt-2 pl-5">
             <li class="nav-item dropdown">
               <a
-                class="
-                  main-nav-link
-                  hvr-underline-from-center
-                  mx-3
-                  px-0
-                  dropdown-toggle
-                "
+                class="main-nav-link hvr-underline-from-center mx-3 px-0 dropdown-toggle"
                 href="#"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
@@ -163,44 +148,6 @@
                 <i class="fab far fa-envelope fa-lg white-text mr-md-4 mr-3">
                 </i>
               </a>
-            </li>
-            <li class="nav-item">
-              <svg style="display: none">
-                <symbol viewBox="0 0 24 24" id="moon">
-                  <path
-                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-                  ></path>
-                </symbol>
-                <symbol viewBox="0 0 24 24" id="sun">
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <line x1="12" y1="1" x2="12" y2="3"></line>
-                  <line x1="12" y1="21" x2="12" y2="23"></line>
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                  <line x1="1" y1="12" x2="3" y2="12"></line>
-                  <line x1="21" y1="12" x2="23" y2="12"></line>
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </symbol>
-              </svg>
-              <button
-                class="color-mode__btn light--hidden"
-                aria-label="Toggle light mode"
-              >
-                <svg aria-hidden="true">
-                  <title>Light Mode</title>
-                  <use xlink:href="#sun"></use>
-                </svg>
-              </button>
-              <button
-                class="color-mode__btn dark--hidden"
-                aria-label="Toggle dark mode"
-              >
-                <svg aria-hidden="true">
-                  <title>Dark Mode</title>
-                  <use xlink:href="#moon"></use>
-                </svg>
-              </button>
             </li>
           </ul>
         </div>
@@ -485,12 +432,7 @@
                           </div>
                           <div class="col text-center">
                             <img
-                              class="
-                                img-fluid
-                                shadow
-                                justify-content-center
-                                img-zoomable
-                              "
+                              class="img-fluid shadow justify-content-center img-zoomable"
                               src="assets/hyr_shift_screen.png"
                               loading="lazy"
                               alt="Hyr Shift Screen"
@@ -1604,23 +1546,14 @@
       <!-- Footer Elements -->
 
       <!-- Copyright -->
-      <div
-        class="text-center py-4"
-        style="font-size: 1rem; color: var(--element1, #111111)"
-      >
+      <div class="text-center py-4" style="font-size: 1rem">
         Designed & coded by Brett Kaplan
       </div>
-      <div
-        class="font-weight-bold text-center py-2"
-        style="font-size: 1rem; color: var(--element1, #111111)"
-      >
+      <div class="font-weight-bold text-center py-2" style="font-size: 1rem">
         Email me at
         <a href="mailto:hello@brettkaplan.design">hello@brettkaplan.design</a>
       </div>
-      <div
-        class="footer-copyright text-center pb-3"
-        style="color: var(--element1, #111111)"
-      >
+      <div class="footer-copyright text-center pb-3">
         © 2020 Copyright:
         <a href="https://brettkaplan.design/">brettkaplan.design</a>
       </div>

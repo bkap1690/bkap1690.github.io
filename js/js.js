@@ -206,50 +206,49 @@ document.addEventListener('DOMContentLoaded', function () {
     // options...
     zIndex: '4000',
   }).listen('.img-zoomable');
+  const zoomingLight = new Zooming({
+    bgColor: '#fff',
+  });
+
+  const zoomingDark = new Zooming({
+    bgColor: '#000',
+  });
 });
 
-// // you can use app's unique identifier here
-// const LOCAL_STORAGE_KEY = 'toggle-bootstrap-theme';
+if (window.CSS && CSS.supports('color', 'var(--primary)')) {
+  var toggleColorMode = function toggleColorMode(e) {
+    // Switch to Light Mode
+    if (e.currentTarget.classList.contains('light--hidden')) {
+      // Sets the custom html attribute
+      document.documentElement.setAttribute('color-mode', 'light'); // Sets the user's preference in local storage
 
-// const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+      localStorage.setItem('color-mode', 'light');
+      return;
+    }
+    /* Switch to Dark Mode
+    Sets the custom html attribute */
+    document.documentElement.setAttribute('color-mode', 'dark'); // Sets the user's preference in local storage
 
-// // you can change this url as needed
-// const DARK_THEME_PATH = 'https://bootswatch.com/4/cyborg/bootstrap.min.css';
+    localStorage.setItem('color-mode', 'dark');
+  }; // Get the buttons in the DOM
 
-// const DARK_STYLE_LINK = document.getElementById('dark-theme-style');
-// const THEME_TOGGLER = document.getElementById('theme-toggler');
+  var toggleColorButtons = document.querySelectorAll('.color-mode__btn'); // Set up event listeners
 
-// let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
-
-// // check if user has already selected dark theme earlier
-// if (isDark) {
-//   enableDarkTheme();
-// } else {
-//   disableDarkTheme();
-// }
-
-// /**
-//  * Apart from toggling themes, this will also store user's theme preference in local storage.
-//  * So when user visits next time, we can load the same theme.
-//  *
-//  */
-// function toggleTheme() {
-//   isDark = !isDark;
-//   if (isDark) {
-//     enableDarkTheme();
-//   } else {
-//     disableDarkTheme();
-//   }
-//   const META = { isDark };
-//   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
-// }
-
-// function enableDarkTheme() {
-//   DARK_STYLE_LINK.setAttribute('href', DARK_THEME_PATH);
-//   THEME_TOGGLER.innerHTML = '🌙 Dark';
-// }
-
-// function disableDarkTheme() {
-//   DARK_STYLE_LINK.setAttribute('href', '');
-//   THEME_TOGGLER.innerHTML = '🌞 Light';
-// }
+  toggleColorButtons.forEach(function (btn) {
+    btn.addEventListener('click', toggleColorMode);
+  });
+} else {
+  // If the feature isn't supported, then we hide the toggle buttons
+  var btnContainer = document.querySelector('.color-mode__header');
+  btnContainer.style.display = 'none';
+}
+// This code assumes a Light Mode default
+if (
+  /* This condition checks whether the user has set a site preference for dark mode OR a OS-level preference for Dark Mode AND no site preference */
+  localStorage.getItem('color-mode') === 'dark' ||
+  (window.matchMedia('(prefers-color-scheme: dark)').matches &&
+    !localStorage.getItem('color-mode'))
+) {
+  // if true, set the site to Dark Mode
+  document.documentElement.setAttribute('color-mode', 'dark');
+}

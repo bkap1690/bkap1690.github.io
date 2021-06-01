@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" color-mode="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="css/hover-min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>CityPups Case Study</title>
+    <script>
+      if (
+        localStorage.getItem('color-mode') === 'dark' ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches &&
+          !localStorage.getItem('color-mode'))
+      ) {
+        document.documentElement.setAttribute('color-mode', 'dark');
+      }
+    </script>
   </head>
 
   <body data-spy="scroll" data-target="#side">
@@ -81,7 +90,13 @@
           <ul class="navbar-nav pt-2 pl-5">
             <li class="nav-item dropdown">
               <a
-                class="main-nav-link hvr-underline-from-center mx-3 px-0 dropdown-toggle"
+                class="
+                  main-nav-link
+                  hvr-underline-from-center
+                  mx-3
+                  px-0
+                  dropdown-toggle
+                "
                 href="#"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
@@ -158,6 +173,44 @@
                 </i>
               </a>
             </li>
+            <li class="nav-item">
+              <svg style="display: none">
+                <symbol viewBox="0 0 24 24" id="moon">
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  ></path>
+                </symbol>
+                <symbol viewBox="0 0 24 24" id="sun">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </symbol>
+              </svg>
+              <button
+                class="color-mode__btn light--hidden"
+                aria-label="Toggle light mode"
+              >
+                <svg aria-hidden="true">
+                  <title>Light Mode</title>
+                  <use xlink:href="#sun"></use>
+                </svg>
+              </button>
+              <button
+                class="color-mode__btn dark--hidden"
+                aria-label="Toggle dark mode"
+              >
+                <svg aria-hidden="true">
+                  <title>Dark Mode</title>
+                  <use xlink:href="#moon"></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
@@ -188,8 +241,8 @@
       </div>
     </div>
     <div class="position-relative" id="content">
-      <div class="row h-100">
-        <nav class="hidden pl-4 bg-light side-nav" id="secondary-nav">
+      <div class="row h-100 mt-5">
+        <nav class="hidden pl-4 side-nav" id="secondary-nav">
           <div class="mt-5 mb-3 sticky-top sticky-offset" id="side">
             <ul class="nav flex-md-column" id="sidenav">
               <li class="nav-item">
@@ -421,7 +474,13 @@
                   <figure class="figure py-6">
                     <img
                       src="assets/petfinder site.png"
-                      class="comp-img figure-img img-fluid img-zoomable rounded w-100"
+                      class="
+                        comp-img
+                        figure-img
+                        img-fluid img-zoomable
+                        rounded
+                        w-100
+                      "
                       alt="petfinder.com analysis pic."
                       loading="lazy"
                     />
@@ -436,7 +495,13 @@
                   <figure class="figure py-6">
                     <img
                       src="assets/rover-site-comp-analysis.png"
-                      class="comp-img figure-img img-fluid img-zoomable rounded w-100"
+                      class="
+                        comp-img
+                        figure-img
+                        img-fluid img-zoomable
+                        rounded
+                        w-100
+                      "
                       alt="rover.com analysis pic."
                       loading="lazy"
                     />
@@ -456,7 +521,13 @@
                   <figure class="figure py-5">
                     <img
                       src="assets/apartmentlist-comp-analysis-1.png"
-                      class="comp-img figure-img img-fluid img-zoomable rounded w-100"
+                      class="
+                        comp-img
+                        figure-img
+                        img-fluid img-zoomable
+                        rounded
+                        w-100
+                      "
                       alt="apartmentlist.com analysis pic."
                       loading="lazy"
                     />
@@ -464,7 +535,13 @@
                   <figure class="figure py-5">
                     <img
                       src="assets/apartmentlist-comp-analysis-2.png"
-                      class="comp-img figure-img img-fluid img-zoomable rounded w-100"
+                      class="
+                        comp-img
+                        figure-img
+                        img-fluid img-zoomable
+                        rounded
+                        w-100
+                      "
                       alt="apartmentlist.com analysis pic."
                       loading="lazy"
                     />
@@ -472,7 +549,13 @@
                   <figure class="figure py-5">
                     <img
                       src="assets/apartmentlist-comp-analysis-3.png"
-                      class="comp-img figure-img img-fluid img-zoomable rounded w-100"
+                      class="
+                        comp-img
+                        figure-img
+                        img-fluid img-zoomable
+                        rounded
+                        w-100
+                      "
                       alt="apartmentlist.com analysis pic."
                       loading="lazy"
                     />
@@ -577,7 +660,11 @@
                 </p>
                 <div class="py-5 d-flex justify-content-center">
                   <div
-                    class="w-xl-75 w-lg-75 w-md-75 w-sm-75 card-rounded card shadow"
+                    class="
+                      w-xl-75 w-lg-75 w-md-75 w-sm-75
+                      card-rounded card
+                      shadow
+                    "
                   >
                     <img
                       class="img-rounded card-img-top"
@@ -1060,14 +1147,23 @@
       <!-- Footer Elements -->
 
       <!-- Copyright -->
-      <div class="text-center py-4" style="font-size: 1rem">
+      <div
+        class="text-center py-4"
+        style="font-size: 1rem; color: var(--element1, #111111)"
+      >
         Designed & coded by Brett Kaplan
       </div>
-      <div class="font-weight-bold text-center py-2" style="font-size: 1rem">
+      <div
+        class="font-weight-bold text-center py-2"
+        style="font-size: 1rem; color: var(--element1, #111111)"
+      >
         Email me at
         <a href="mailto:hello@brettkaplan.design">hello@brettkaplan.design</a>
       </div>
-      <div class="footer-copyright text-center pb-3">
+      <div
+        class="footer-copyright text-center pb-3"
+        style="color: var(--element1, #111111)"
+      >
         © 2020 Copyright:
         <a href="https://brettkaplan.design/">brettkaplan.design</a>
       </div>
