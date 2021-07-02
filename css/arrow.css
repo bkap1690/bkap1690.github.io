@@ -40,8 +40,6 @@ section h1 {
   white-space: nowrap;
 }
 
-
-
 #thanks {
   background-color: #fff;
 }
@@ -76,7 +74,7 @@ section h1 {
 #thanks p a {
   color: #333;
   text-decoration: none;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 #thanks p a:hover {
@@ -93,16 +91,14 @@ section h1 {
   transform: translate(0, -50%);
   color: #fff;
   font: normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .demo a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
-
-
 
 #section01 a {
   padding-top: 60px;
@@ -121,8 +117,6 @@ section h1 {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-
-
 
 #section02 a {
   padding-top: 60px;
@@ -154,8 +148,6 @@ section h1 {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-
-
 
 #section03 a {
   padding-top: 60px;
@@ -196,7 +188,7 @@ section h1 {
   content: '';
   width: 44px;
   height: 44px;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   opacity: 0;
   -webkit-animation: sdb03 3s infinite;
@@ -214,7 +206,7 @@ section h1 {
   }
 
   60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
 
@@ -233,7 +225,7 @@ section h1 {
   }
 
   60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
 
@@ -241,8 +233,6 @@ section h1 {
     opacity: 0;
   }
 }
-
-
 
 #section04 a {
   padding-top: 60px;
@@ -291,8 +281,6 @@ section h1 {
     transform: rotate(-45deg) translate(0, 0);
   }
 }
-
-
 
 #section05 a {
   padding-top: 70px;
@@ -346,8 +334,6 @@ section h1 {
   }
 }
 
-
-
 #section06 a {
   padding-top: 70px;
 }
@@ -400,8 +386,6 @@ section h1 {
   }
 }
 
-
-
 #section07 a {
   padding-top: 80px;
 }
@@ -430,14 +414,14 @@ section h1 {
 
 #section07 a span:nth-of-type(2) {
   top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 #section07 a span:nth-of-type(3) {
   top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 @-webkit-keyframes sdb07 {
@@ -468,8 +452,6 @@ section h1 {
   }
 }
 
-
-
 #section08 a {
   padding-top: 60px;
 }
@@ -498,8 +480,6 @@ section h1 {
   border-radius: 100%;
   box-sizing: border-box;
 }
-
-
 
 #section09 a {
   padding-top: 80px;
@@ -544,8 +524,6 @@ section h1 {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-
-
 
 #section10 a {
   padding-top: 60px;
